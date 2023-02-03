@@ -1,2 +1,74 @@
+body {
+  overflow-x: hidden;
+  background: white;
+}
+
+body.before-load {
+  overflow: hidden;
+}
+.container {
+  /* iPhone 가로 스크롤 방지 */
+  /* overflow-x: hidden; */
+}
+.scroll-section {
+  position: relative;
+  padding: 100px;
+  background: #fff;
+}
+
+.main-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 35vh;
+  margin: 5px 0;
+  height: 3em;
+  font-size: 2.5rem;
+  opacity: 0;
+}
+.main-message p {
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.description {
+  color: #888;
+}
+
+.sticky-elem {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem {
+  display: block;
+  will-change: transform, opacity;
+}
+.scroll-effect-end .sticky-elem {
+  /* 스크롤 효과가 모두 끝나고, 아래 일반 콘텐츠 영역에서는 sticky-elem들을 모두 안보이도록 */
+  display: none !important;
+}
+.sticky-elem-video {
+  top: 0;
+  height: 100%;
+}
+.sticky-elem-video .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+.before-load .container {
+  display: none;
+}
+.before-load .loading {
+  opacity: 1;
+}
 @media all and (max-width: 768px) {
 }
