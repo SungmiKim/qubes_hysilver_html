@@ -12,7 +12,7 @@
     {
       // 0
       type: "sticky",
-      heightNum: 5, // 브라우저 높이의 5배로 scrollHeight 세팅
+      heightNum: 6, // 브라우저 높이의 5배로 scrollHeight 세팅
       scrollHeight: 0,
       objs: {
         container: document.querySelector("#scroll-section-0"),
@@ -20,24 +20,29 @@
         messageB: document.querySelector("#scroll-section-0 .main-message.b"),
         messageC: document.querySelector("#scroll-section-0 .main-message.c"),
         messageD: document.querySelector("#scroll-section-0 .main-message.d"),
+        messageE: document.querySelector("#scroll-section-0 .main-message.e"),
       },
       values: {
-        messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
-        messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
-        messageC_opacity_in: [0, 1, { start: 0.5, end: 0.6 }],
-        messageD_opacity_in: [0, 1, { start: 0.7, end: 0.8 }],
-        messageA_translateY_in: [20, 0, { start: 0.1, end: 0.2 }],
-        messageB_translateY_in: [20, 0, { start: 0.3, end: 0.4 }],
-        messageC_translateY_in: [20, 0, { start: 0.5, end: 0.6 }],
-        messageD_translateY_in: [20, 0, { start: 0.7, end: 0.8 }],
-        messageA_opacity_out: [1, 0, { start: 0.25, end: 0.3 }],
-        messageB_opacity_out: [1, 0, { start: 0.45, end: 0.5 }],
-        messageC_opacity_out: [1, 0, { start: 0.65, end: 0.7 }],
-        messageD_opacity_out: [1, 0, { start: 0.85, end: 0.9 }],
-        messageA_translateY_out: [0, -20, { start: 0.25, end: 0.3 }],
-        messageB_translateY_out: [0, -20, { start: 0.45, end: 0.5 }],
-        messageC_translateY_out: [0, -20, { start: 0.65, end: 0.7 }],
-        messageD_translateY_out: [0, -20, { start: 0.85, end: 0.9 }],
+        messageA_opacity_in: [0, 1, { start: 0.0, end: 0.2 }],
+        messageB_opacity_in: [0, 1, { start: 0.2, end: 0.3 }],
+        messageC_opacity_in: [0, 1, { start: 0.4, end: 0.5 }],
+        messageD_opacity_in: [0, 1, { start: 0.6, end: 0.7 }],
+        messageE_opacity_in: [0, 1, { start: 0.8, end: 0.9 }],
+        messageA_translateY_in: [20, 0, { start: 0.0, end: 0.1 }],
+        messageB_translateY_in: [20, 0, { start: 0.2, end: 0.3 }],
+        messageC_translateY_in: [20, 0, { start: 0.4, end: 0.5 }],
+        messageD_translateY_in: [20, 0, { start: 0.6, end: 0.7 }],
+        messageE_translateY_in: [20, 0, { start: 0.8, end: 0.9 }],
+        messageA_opacity_out: [1, 0, { start: 0.15, end: 0.2 }],
+        messageB_opacity_out: [1, 0, { start: 0.35, end: 0.4 }],
+        messageC_opacity_out: [1, 0, { start: 0.55, end: 0.6 }],
+        messageD_opacity_out: [1, 0, { start: 0.75, end: 0.8 }],
+        messageE_opacity_out: [1, 1, { start: 0.95, end: 1 }],
+        messageA_translateY_out: [0, -20, { start: 0.15, end: 0.2 }],
+        messageB_translateY_out: [0, -20, { start: 0.35, end: 0.4 }],
+        messageC_translateY_out: [0, -20, { start: 0.55, end: 0.6 }],
+        messageD_translateY_out: [0, 0, { start: 0.75, end: 0.8 }],
+        messageE_translateY_out: [0, 0, { start: 0.95, end: 1 }],
       },
     },
     {
@@ -57,10 +62,8 @@
     for (let i = 0; i < sceneInfo.length; i++) {
       if (sceneInfo[i].type === "sticky") {
         sceneInfo[i].scrollHeight = sceneInfo[i].heightNum * window.innerHeight;
-      } else if (sceneInfo[i].type === "normal") {
-        sceneInfo[i].scrollHeight = sceneInfo[i].objs.content.offsetHeight + window.innerHeight * 0.5;
+        sceneInfo[i].objs.container.style.height = `${sceneInfo[i].scrollHeight}px`;
       }
-      sceneInfo[i].objs.container.style.height = `${sceneInfo[i].scrollHeight}px`;
     }
 
     yOffset = window.pageYOffset;
@@ -108,8 +111,9 @@
     const currentYOffset = yOffset - prevScrollHeight;
     const scrollHeight = sceneInfo[currentScene].scrollHeight;
     const scrollRatio = currentYOffset / scrollHeight;
+    // console.log(scrollRatio);
     if (currentScene === 0) {
-      if (scrollRatio <= 0.22) {
+      if (scrollRatio <= 0.01) {
         // in
         objs.messageA.style.opacity = calcValues(values.messageA_opacity_in, currentYOffset);
         objs.messageA.style.transform = `translate3d(0, ${calcValues(values.messageA_translateY_in, currentYOffset)}%, 0)`;
@@ -119,7 +123,7 @@
         objs.messageA.style.transform = `translate3d(0, ${calcValues(values.messageA_translateY_out, currentYOffset)}%, 0)`;
       }
 
-      if (scrollRatio <= 0.42) {
+      if (scrollRatio <= 0.21) {
         // in
         objs.messageB.style.opacity = calcValues(values.messageB_opacity_in, currentYOffset);
         objs.messageB.style.transform = `translate3d(0, ${calcValues(values.messageB_translateY_in, currentYOffset)}%, 0)`;
@@ -129,7 +133,7 @@
         objs.messageB.style.transform = `translate3d(0, ${calcValues(values.messageB_translateY_out, currentYOffset)}%, 0)`;
       }
 
-      if (scrollRatio <= 0.62) {
+      if (scrollRatio <= 0.41) {
         // in
         objs.messageC.style.opacity = calcValues(values.messageC_opacity_in, currentYOffset);
         objs.messageC.style.transform = `translate3d(0, ${calcValues(values.messageC_translateY_in, currentYOffset)}%, 0)`;
@@ -139,7 +143,7 @@
         objs.messageC.style.transform = `translate3d(0, ${calcValues(values.messageC_translateY_out, currentYOffset)}%, 0)`;
       }
 
-      if (scrollRatio <= 0.82) {
+      if (scrollRatio <= 0.61) {
         // in
         objs.messageD.style.opacity = calcValues(values.messageD_opacity_in, currentYOffset);
         objs.messageD.style.transform = `translate3d(0, ${calcValues(values.messageD_translateY_in, currentYOffset)}%, 0)`;
@@ -147,6 +151,16 @@
         // out
         objs.messageD.style.opacity = calcValues(values.messageD_opacity_out, currentYOffset);
         objs.messageD.style.transform = `translate3d(0, ${calcValues(values.messageD_translateY_out, currentYOffset)}%, 0)`;
+      }
+
+      if (scrollRatio <= 0.81) {
+        // in
+        objs.messageE.style.opacity = calcValues(values.messageE_opacity_in, currentYOffset);
+        objs.messageE.style.transform = `translate3d(0, ${calcValues(values.messageE_translateY_in, currentYOffset)}%, 0)`;
+      } else {
+        // out
+        objs.messageE.style.opacity = calcValues(values.messageE_opacity_out, currentYOffset);
+        objs.messageE.style.transform = `translate3d(0, ${calcValues(values.messageE_translateY_out, currentYOffset)}%, 0)`;
       }
     }
   }
