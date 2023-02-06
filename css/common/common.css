@@ -4,3 +4,101 @@
 
 @media all and (max-width: 768px) {
 }
+
+.container {
+  min-width: 1420px;
+  overflow: auto;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  height: 80px;
+}
+
+header .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .gnb {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .gnb_link {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .gnb_link + .gnb_link {
+  margin-left: 60px;
+}
+header .gnb_link > a {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #191919;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+}
+
+header .gnb_link:hover > a {
+  border-color: #707070;
+}
+
+header .gnb_link .sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 212px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 16px 0;
+  display: none;
+}
+header .gnb_link:hover .sub {
+  display: block;
+}
+
+header .gnb_link .sub a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 39px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #191919;
+  padding-left: 22px;
+  padding-right: 26px;
+}
+
+header .gnb_link .sub a::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background: url(../../images/icon/header/arrow1.png) no-repeat center / 100%;
+}
+
+header .gnb_link .sub a:hover {
+  background-color: rgba(70, 102, 171, 0.9);
+  color: #fff;
+}
+
+header .gnb_link .sub a:hover::after {
+  background-image: url(../../images/icon/header/arrow2.png);
+}

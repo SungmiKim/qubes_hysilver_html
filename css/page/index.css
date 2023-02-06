@@ -1,15 +1,12 @@
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: white;
 }
 
 body.before-load {
   overflow: hidden;
 }
-.container {
-  /* iPhone 가로 스크롤 방지 */
-  /* overflow-x: hidden; */
-}
+
 .scroll-section {
   position: relative;
   padding: 100px;
@@ -20,16 +17,16 @@ body.before-load {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 35vh;
-  margin: 5px 0;
-  height: 3em;
-  font-size: 2.5rem;
+  top: 40%;
+  transform: translate(0%, -50%);
   opacity: 0;
 }
 .main-message p {
+  font-size: 36px;
   font-weight: bold;
-  text-align: center;
   line-height: 1.2;
+  text-align: center;
+  color: #fff;
 }
 
 .description {
