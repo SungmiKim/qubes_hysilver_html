@@ -35,7 +35,7 @@
         messageC_translateY_in: [20, 0, { start: 0.3, end: 0.45 }],
         messageD_translateY_in: [20, 0, { start: 0.45, end: 0.6 }],
         messageE_translateY_in: [20, 0, { start: 0.6, end: 0.75 }],
-        messageF_translateY_in: [20, 0, { start: 0.75, end: 0.9 }],
+        messageF_translateY_in: [0, 0, { start: 0.75, end: 0.9 }],
 
         messageA_opacity_out: [1, 0, { start: 0.15, end: 0.15 }],
         messageB_opacity_out: [1, 0, { start: 0.3, end: 0.3 }],
@@ -176,6 +176,16 @@
         // out
         objs.messageF.style.opacity = calcValues(values.messageF_opacity_out, currentYOffset);
         objs.messageF.style.transform = `translate3d(0, ${calcValues(values.messageF_translateY_out, currentYOffset)}%, 0)`;
+      }
+      if (scrollRatio <= 0.87) {
+        $(".sticky-elem.f").removeClass("bottom");
+      } else {
+        $(".sticky-elem.f").addClass("bottom");
+      }
+      if (scrollRatio <= 0.75) {
+        $(".sticky-elem.f .inner").removeClass("show");
+      } else {
+        $(".sticky-elem.f .inner").addClass("show");
       }
     }
   }

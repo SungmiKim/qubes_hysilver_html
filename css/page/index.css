@@ -31,6 +31,7 @@ body.before-load {
 
 .description {
   color: #888;
+  font-size: 50px;
 }
 
 .sticky-elem {
@@ -39,12 +40,50 @@ body.before-load {
   left: 0;
   width: 100%;
 }
-.sticky-elem.e .inner {
+.sticky-elem.bottom {
+  position: absolute;
+  top: unset !important;
+  bottom: 0;
+}
+.sticky-elem .inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.sticky-elem.f {
+  top: 0;
+}
+.sticky-elem.f .inner {
+  height: 100vh;
+  display: none;
+}
+.sticky-elem.f .inner.show {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  max-width: none;
+}
+.sticky-elem.f a {
+  max-width: 600px;
+  width: 100%;
+  height: 80px;
+  border-radius: 20px;
+  border: solid 1px #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 46px 0 35px;
+}
+.sticky-elem.f a + a {
+  margin-top: 28px;
+}
+
 #show-scene-0 #scroll-section-0 .sticky-elem,
 #show-scene-1 #scroll-section-1 .sticky-elem {
   display: block;
@@ -70,8 +109,6 @@ body.before-load {
 .before-load .container {
   display: none;
 }
-.before-load .loading {
-  opacity: 1;
-}
+
 @media all and (max-width: 768px) {
 }
