@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @media all and (max-width: 768px) {
 }
@@ -17,13 +23,15 @@
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   background: #fff;
   width: 100%;
   height: 80px;
+  z-index: 10;
+  padding: 0 20px;
 }
 
 header .inner {
@@ -101,4 +109,129 @@ header .gnb_link .sub a:hover {
 
 header .gnb_link .sub a:hover::after {
   background-image: url(../../images/icon/header/arrow2.png);
+}
+header .link_oth {
+  font-size: 14px;
+  font-weight: 300;
+  color: #191919;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer * {
+  font-family: "NanumSquareRound";
+}
+footer .fo_nav {
+  height: 54px;
+  border-top: 1px solid #797676;
+  border-bottom: 1px solid #797676;
+}
+
+footer .fo_nav .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  color: #000;
+}
+
+footer .fo_nav .left {
+  display: flex;
+  align-items: center;
+}
+
+footer .fo_nav .left li {
+  position: relative;
+}
+
+footer .fo_nav .left li + li {
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+footer .fo_nav .left li + li::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: #dbdbdb;
+}
+footer .fo_nav .left li:last-child a {
+  color: #3317f2;
+}
+footer .fo_nav .right {
+  padding-right: 130px;
+}
+footer .inner.bot {
+  padding: 36px 0 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .inner.bot .logo {
+  margin-bottom: 30px;
+}
+footer .inner.bot dl {
+  font-size: 13px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #191919;
+}
+footer .inner.bot dl dt {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #191919;
+  margin-bottom: 8px;
+}
+footer .inner.bot dl .copy {
+  letter-spacing: normal;
+  margin-top: 30px;
+}
+
+footer .inner.bot dl .copy span + span {
+  margin-left: 20px;
+}
+footer .inner.bot .right .tel {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 56px;
+}
+
+footer .inner.bot .right .tel span + span {
+  margin-top: 7px;
+}
+footer .inner.bot .right .time {
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: -0.65px;
+  color: #191919;
 }

@@ -184,8 +184,10 @@
       }
       if (scrollRatio <= 0.75) {
         $(".sticky-elem.f .inner").removeClass("show");
+        $("header").removeClass("on");
       } else {
         $(".sticky-elem.f .inner").addClass("show");
+        $("header").addClass("on");
       }
     }
   }
