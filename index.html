@@ -112,7 +112,11 @@
       </header>
       <section class="scroll-section" id="scroll-section-0">
         <div class="sticky-elem sticky-elem-video">
-          <video loop="" playsinline="" muted="" class="video" autoplay poster="./video/poster1.jpg">
+          <picture class="poster">
+            <source srcset="./video/poster1.jpg" media="(min-width: 640px)" />
+            <img srcset="./video/poster1.jpg" alt="" />
+          </picture>
+          <video loop="" playsinline="" muted="" class="video" autoplay poster="./video/poster1.jpg" onloadeddata="loadedData()">
             <source src="./video/video.mp4" type="video/mp4" media="(min-width: 640px)" />
             <source src="./video/video.mp4" type="video/mp4" />
           </video>
@@ -378,6 +382,10 @@
       videoBar(1, 4);
       videoBar(2, 3);
       videoBar(3, 4);
+
+      function loadedData() {
+        $(".poster").addClass("hide");
+      }
     </script>
   </body>
 </html>
