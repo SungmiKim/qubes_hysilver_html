@@ -80,6 +80,9 @@
   .con1 .t_myeong {
     font-size: 24px;
   }
+  .con1 .t_myeong > span {
+    display: inline-block;
+  }
   .con1 .desc {
     font-size: 15px;
     margin-top: 16px;
