@@ -7,6 +7,11 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.t_myeong {
+  font-family: "Nanum Myeongjo", serif;
+}
 body.fixed {
   height: 100vh;
   overflow: hidden;
@@ -16,6 +21,8 @@ body.fixed {
 }
 .wb {
   word-break: keep-all;
+}
+.t_myeong {
 }
 .container {
   min-width: 1420px;

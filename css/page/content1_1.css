@@ -1,3 +1,5 @@
+/* common */
+
 /* sub_bg */
 main {
   padding-top: 80px;
@@ -81,6 +83,10 @@ main {
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
+}
+
+.sec {
+  background: #fff;
 }
 
 .sec .tit_wrap {
@@ -273,4 +279,45 @@ main {
   justify-content: center;
   border-radius: 100%;
   margin-top: 27px;
+}
+
+/* common */
+
+.sec {
+  padding-top: 112px;
+}
+
+.tit_wrap.t1 {
+  margin-bottom: 60px;
+}
+.con1 {
+  position: relative;
+  margin-bottom: 236px;
+}
+
+.con1 .inner {
+  position: absolute;
+  height: 420px;
+  bottom: -119px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 78px 95px 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.83), #fff);
+}
+.con1 .t_myeong {
+  font-size: 50px;
+  line-height: 1.28;
+  letter-spacing: -1.5px;
+  color: #191919;
+}
+.con1 .desc {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #191919;
+  margin-top: 24px;
 }
