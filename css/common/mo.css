@@ -1,2 +1,131 @@
 @media all and (max-width: 540px) {
+  /* common */
+  /* sub_bg */
+  .bg_img {
+    top: 60px;
+    height: 300px;
+  }
+  main {
+    padding-top: 60px;
+    margin-top: -300px;
+  }
+
+  .sub_bg {
+    height: 300px;
+    padding: 16px 20px 30px;
+  }
+
+  .sub_bg .sub_depth {
+    font-size: 12px;
+  }
+
+  .sub_bg .sub_depth em {
+    margin: 0 10px;
+  }
+  .sub_bg .bg_txt {
+    font-size: 16px;
+  }
+  .sub_bg .bg_txt h2 {
+    font-size: 32px;
+  }
+  /* sub_nav */
+  .sub_nav .links {
+    font-size: 14px;
+  }
+
+  .sub_nav .links li + li {
+    /* margin-left: 53px; */
+  }
+  .sub_nav .links li.active::before {
+    /* content: ""; */
+    /* width: 100%; */
+    /* height: 2px; */
+    /* background-color: #e84c2c; */
+    /* position: absolute; */
+    /* top: calc(100% + 8px); */
+    /* left: 0; */
+  }
+
+  .sec .tit_wrap {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  .sec .tit_wrap h3 {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .sec .tit_wrap h4 {
+    padding-left: 12px;
+  }
+  .sec .tit_wrap h4::before {
+    height: 20px;
+  }
+  /* common */
+
+  .sec {
+    /* padding-top: 112px; */
+  }
+
+  .tit_wrap.t1 {
+    /* margin-bottom: 60px; */
+  }
+  .con1 {
+    /* position: relative; */
+    /* margin-bottom: 236px; */
+  }
+
+  .con1 .inner {
+    padding: 50px 20px 0;
+  }
+  .con1 .t_myeong {
+    font-size: 24px;
+  }
+  .con1 .desc {
+    font-size: 15px;
+    margin-top: 16px;
+  }
+
+  .con3::after {
+    height: 300px;
+  }
+
+  .con3 .logo {
+    height: 150px;
+    width: calc(100% - 40px);
+    margin: 20px auto 40px;
+  }
+  .con3 .logo img {
+    width: 200px;
+  }
+  .con3 .signature {
+    padding: 20px 20px 50px;
+    border-radius: 0 0 46px 46px;
+  }
+
+  .con3 .signature ul {
+    padding: 16px 0;
+    font-size: 15px;
+  }
+  .con3 .signature ul li {
+    padding: 0 20px;
+  }
+  .con3 .signature ul li + li {
+    margin-top: 10px;
+  }
+  .con3 .signature .col.c1 img {
+    width: 40px;
+  }
+  .con3 .signature .col.c2 {
+    margin-top: 12px;
+  }
+
+  .con3 .signature .col.c2 ul + ul {
+    margin-top: 12px;
+  }
+  .con3 .signature .col.c2 .s1 img {
+    width: 150px;
+  }
+  .con3 .signature .col.c2 .s2 img {
+    width: 230px;
+  }
 }

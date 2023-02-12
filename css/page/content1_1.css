@@ -1,23 +1,29 @@
 /* common */
-
 /* sub_bg */
+body.sub {
+  min-width: 1420px;
+}
+.sub .container {
+  overflow: unset;
+}
+.bg_img {
+  position: sticky;
+  top: 80px;
+  display: block;
+  z-index: -1;
+  height: 620px;
+  background: url(../../images/bg/sub_bg1.png) no-repeat center / cover;
+}
 main {
+  position: relative;
   padding-top: 80px;
+  margin-top: -620px;
 }
 
 .sub_bg {
   height: 620px;
   overflow: hidden;
   padding: 17px 20px 53px;
-}
-
-.sub_bg .bg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -1;
 }
 
 .sub_bg .inner {
@@ -95,12 +101,29 @@ main {
   color: #191919;
   display: flex;
   align-items: flex-end;
+  padding: 0 100px;
 }
 .sec .tit_wrap h3 {
   font-size: 44px;
   font-weight: bold;
   letter-spacing: -1.32px;
   margin-right: 17px;
+}
+.sec .tit_wrap h4 {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+  padding-left: 16px;
+}
+.sec .tit_wrap h4::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background-color: #e84c2c;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
 }
 /* quick */
 .quick {
@@ -111,6 +134,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 100;
+}
+.quick.mo {
+  display: none;
 }
 .quick ul {
   display: flex;
@@ -312,12 +339,273 @@ main {
 }
 .con1 .desc {
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: -0.6px;
   text-align: left;
   color: #191919;
   margin-top: 24px;
+}
+
+.con2 {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 65px 20px;
+}
+.con3 {
+  position: relative;
+  padding: 86px 0 230px;
+}
+.con3::after {
+  content: "";
+  width: 100%;
+  height: 457px;
+  background-color: #e84c2c;
+  position: absolute;
+  bottom: 0;
+}
+.con3 .inner {
+  position: relative;
+  z-index: 1;
+}
+.con3 .logo {
+  width: calc(100% - 200px);
+  height: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../images/sub/content1_1/logo_bg.png) no-repeat center / cover;
+  margin: 28px auto 75px;
+}
+
+.con3 .signature {
+  border-radius: 0 0 91px 91px;
+  box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
+  padding: 30px 80px 122px;
+}
+
+.con3 .signature ul {
+  border: solid 1px #e3e3e3;
+  background-color: #fff;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.6px;
+  color: #777;
+}
+.con3 .signature ul li {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con3 .signature ul li:last-child {
+  flex: 1;
+}
+.con3 .signature ul li + li {
+  border-left: 3px solid #e3e3e3;
+}
+.con3 .signature .col.c2 {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.con3 .signature .col.c2 ul {
+  width: 50%;
+}
+
+.con3 .signature .col.c2 ul + ul {
+  margin-left: 15px;
+}
+.con3 .signature .c2 ul.s1 li:nth-child(1) {
+  width: 46%;
+}
+.con3 .signature .c2 ul.s2 li:nth-child(1) {
+  width: 68%;
+}
+
+@media all and (max-width: 768px) {
+  /* common */
+  /* sub_bg */
+  body.sub {
+    min-width: auto;
+  }
+
+  .bg_img {
+    height: 400px;
+  }
+
+  main {
+    padding-top: 80px;
+    margin-top: -400px;
+  }
+
+  .sub_bg {
+    height: 400px;
+    padding: 16px 20px 40px;
+  }
+
+  .sub_bg .sub_depth {
+    font-size: 14px;
+  }
+  .sub_bg .sub_depth em {
+    margin: 0 16px;
+  }
+  .sub_bg .bg_txt {
+    font-size: 24px;
+  }
+  .sub_bg .bg_txt h2 {
+    font-size: 40px;
+  }
+  /* sub_nav */
+  .sub_nav .inner {
+    max-width: 500px;
+    height: 36px;
+    position: relative;
+  }
+  .sub_nav .inner::before {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(0%, -50%);
+    z-index: 1;
+  }
+  .sub_nav .links {
+    height: auto;
+    background: #f8f8f8;
+
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+  }
+  .sub_nav .links li {
+    width: 100%;
+    text-align: center;
+    min-height: 36px;
+    align-items: center;
+    padding: 0 16px;
+    display: none;
+  }
+  .sub_nav .links li:first-child {
+    display: flex;
+  }
+  .sub_nav .show .links li {
+    display: flex;
+  }
+  .sub_nav .links li + li {
+    margin-left: 0;
+  }
+  .sub_nav .links li.active a {
+    color: #e84c2c;
+  }
+  .sub_nav .links li.active::before {
+    display: none;
+  }
+
+  .sec .tit_wrap {
+    font-size: 20px;
+    padding: 0 50px;
+  }
+  .sec .tit_wrap h3 {
+    font-size: 36px;
+    margin-right: 12px;
+  }
+
+  /* common */
+  .sec {
+    padding-top: 80px;
+  }
+
+  .tit_wrap.t1 {
+    margin-bottom: 40px;
+  }
+  .con1 {
+    margin-bottom: 80px;
+  }
+
+  .con1 .inner {
+    position: relative;
+    height: auto;
+    bottom: 0;
+    padding: 80px 50px 0;
+  }
+  .con1 .t_myeong {
+    font-size: 36px;
+    word-break: keep-all;
+  }
+  .con1 .t_myeong > span {
+    font-family: inherit;
+    display: block;
+  }
+  .con1 .desc {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .con2 {
+    padding: 50px 20px;
+  }
+  .con3 {
+    padding: 50px 0 100px;
+  }
+  .con3::after {
+    height: 400px;
+  }
+
+  .con3 .logo {
+    width: calc(100% - 100px);
+    height: 180px;
+    margin: 20px auto 50px;
+  }
+
+  .con3 .logo img {
+    width: 250px;
+  }
+  .con3 .signature {
+    width: calc(100% - 40px);
+    padding: 20px 40px 80px;
+    margin: auto;
+  }
+
+  .con3 .signature ul {
+    padding: 20px 0;
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .con3 .signature ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0 100px;
+    word-break: keep-all;
+  }
+
+  .con3 .signature ul li + li {
+    border-left: none;
+  }
+  .con3 .signature ul li br {
+    display: none;
+  }
+
+  .con3 .signature .col.c2 {
+    flex-direction: column;
+  }
+  .con3 .signature .col.c2 ul {
+    width: 100%;
+  }
+
+  .con3 .signature .col.c2 ul + ul {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .con3 .signature .c2 ul.s1 li:nth-child(1) {
+    width: 100%;
+  }
+  .con3 .signature .c2 ul.s2 li:nth-child(1) {
+    width: 100%;
+  }
 }

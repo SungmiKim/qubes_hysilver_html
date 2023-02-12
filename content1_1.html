@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/common/mo.css" />
   </head>
 
-  <body>
+  <body class="sub">
     <div class="container">
       <header>
         <div class="inner">
@@ -110,10 +110,9 @@
           </div>
         </div>
       </header>
-
+      <div class="bg_img"></div>
       <main>
         <div class="sub_bg">
-          <img src="./images/bg/sub_bg1.png" alt="bg" class="bg" />
           <div class="inner">
             <div class="sub_depth"><span class="under">Home</span><em>&gt;</em>희연의 이야기<em>&gt;</em>희연의 철학</div>
             <div class="bg_txt">
@@ -164,7 +163,7 @@
           <div class="con con1">
             <img src="./images/sub/content1_1/bg2.png" alt="우리나라 최초의 신체구속 폐지 선언 다시, 가정으로" />
             <div class="inner">
-              <div class="t_myeong">우리나라 최초의 신체구속 폐지 선언 “다시, 가정으로”</div>
+              <div class="t_myeong">우리나라 최초의 신체구속 폐지 선언 <span>“다시, 가정으로”</span></div>
               <p class="desc">
                 신체를 구속하는 것은 환자의 삶을 구속하는 것입니다. <br />
                 우리나라 최초의 신체폐지 선언 후 의료진의 어려움은 상상을 초월하였습니다.<br />
@@ -175,6 +174,50 @@
                 그 결과 2009년 이후 희연병원에서는 단 한 사람에게도 신체 억제를 시행하고 있지 않습니다.<br />
                 다시 한 번 빛나는 삶을 향한 걸음을 위해 오늘도 환자 곁에서 기쁨도, 슬픔도 함께합니다.<br />
               </p>
+            </div>
+          </div>
+
+          <div class="con con2">
+            <img src="./images/sub/content1_1/img1.png" alt="img" />
+          </div>
+
+          <div class="con con3">
+            <div class="inner">
+              <div class="tit_wrap t1">
+                <h3>HI</h3>
+                <small>Hospital Identitiy</small>
+              </div>
+
+              <div class="logo">
+                <img src="./images/sub/content1_1/logo1.png" alt="logo" />
+              </div>
+
+              <div class="tit_wrap t2">
+                <h4>Signature & Grid System</h4>
+              </div>
+
+              <div class="signature">
+                <div class="col c1">
+                  <ul>
+                    <li><img src="./images/sub/content1_1/logo2.png" alt="logo" /></li>
+                    <li>Heeyeon <br />Symbol Mark</li>
+                    <li>
+                      세명의 사람이 어깨동무를 하며 감싸안는 형상으로 <br />
+                      지역사회 + 희연 + 환자가 함께한다는 의미
+                    </li>
+                  </ul>
+                </div>
+                <div class="col c2">
+                  <ul class="s1">
+                    <li><img src="./images/sub/content1_1/logo3.png" alt="logo" /></li>
+                    <li>Heeyeon <br />Typographic Logo</li>
+                  </ul>
+                  <ul class="s2">
+                    <li><img src="./images/sub/content1_1/logo4.png" alt="logo" /></li>
+                    <li>Heeyeon <br />Slogan</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -288,5 +331,11 @@
       </footer>
     </div>
     <script src="./js/scripts.js"></script>
+    <script>
+      $(".sub_nav .inner").click(function () {
+        console.log("click");
+        $(this).toggleClass("show");
+      });
+    </script>
   </body>
 </html>
