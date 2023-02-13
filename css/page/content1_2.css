@@ -1,6 +1,5 @@
-.sec .inner {
-  margin-top: 110px;
-  margin-bottom: 30px;
+.sec {
+  padding-top: 112px;
 }
 
 .people {
@@ -8,7 +7,6 @@
   margin-top: 67px;
   padding: 0 100px;
 }
-
 .people .card_content {
   display: flex;
   justify-content: space-between;
@@ -17,6 +15,9 @@
 .people .card_content .card {
   width: 295px;
   background: #f8f8f8;
+}
+.people .card_content .card:hover {
+  scale: 1.1;
 }
 .people .tit {
   position: relative;
@@ -76,6 +77,9 @@
   color: #e84c2c;
 }
 
+.people.part2{
+  margin-top: 10px;
+}
 .people.part2 .card_content {
   background: #f8f8f8;
   display: flex;
@@ -115,7 +119,6 @@
   line-height: 1.81;
   letter-spacing: -0.48px;
 }
-
 .people.part3 .card_content .card.link .card_tit {
   font-family: NotoSansKR;
   font-size: 16px;
