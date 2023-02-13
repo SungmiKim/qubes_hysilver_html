@@ -1,0 +1,170 @@
+.sec .inner {
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.people {
+  width: 100%;
+  margin-top: 67px;
+  padding: 0 100px;
+}
+
+.people .card_content {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.people .card_content .card {
+  width: 295px;
+  background: #f8f8f8;
+}
+.people .tit {
+  position: relative;
+  padding: 7px 16px;
+  margin: 18px 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+}
+.people .card_content .card .card_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.people .card_content .card .card_name .name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.people .card_content .card .card_name .depart {
+  font-size: 16px;
+  font-weight: 500;
+}
+.people .card_content .card .card_info {
+  padding: 12px 25px;
+}
+
+.people .card_content .card.link {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.people .card_content .card.link .card_name {
+  margin: 10px 0;
+}
+
+.people.part1 .tit::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background-color: #d71820;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+.people.part1 .card_content .card .card_tit {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  line-height: 1.81;
+  letter-spacing: -0.48px;
+  font-weight: bold;
+  color: #e84c2c;
+}
+.people.part1 .card_content .card.link .card_tit {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: bold;
+  color: #e84c2c;
+}
+
+.people.part2 .card_content {
+  background: #f8f8f8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 33px;
+}
+.people.part2 .card_content {
+  font-size: 20px;
+}
+.people.part2 .card_content .point {
+  font-size: 20px;
+  font-weight: bold;
+}
+.people.part2 .card_content small {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.people.part3 {
+  margin-bottom: 150px;
+}
+.people.part3 .tit::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background-color: #3da84c;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+.people.part3 .card_content .card .card_tit {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3da84c;
+  line-height: 1.81;
+  letter-spacing: -0.48px;
+}
+
+.people.part3 .card_content .card.link .card_tit {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3da84c;
+}
+
+.line {
+  height: 1px;
+  background: #e3e3e3;
+  margin: 120px 100px 85px;
+}
+
+.con1 {
+  position: relative;
+  margin-bottom: 236px;
+}
+.con1 .cover {
+  display: block;
+  margin: auto;
+}
+.con1 .inner {
+  position: absolute;
+  height: 420px;
+  bottom: -119px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 78px 288px 45px 127px;
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.83), #fff);
+}
+.con1 .t_myeong {
+  font-size: 50px;
+  line-height: 1.28;
+  letter-spacing: -1.5px;
+  color: #191919;
+}
+.con1 .t_myeong > span {
+  font-family: inherit;
+}
+.con1 .desc {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #191919;
+  margin-top: 24px;
+}
+
+.con1 .desc > span {
+  font-weight: bold;
+}

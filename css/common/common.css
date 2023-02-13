@@ -7,6 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 .t_myeong {
@@ -212,6 +213,316 @@ header .mo_gnb .main_menu {
   height: 100%;
   object-fit: cover;
 }
+
+/* sub_bg */
+body.sub {
+  min-width: 1420px;
+}
+.sub .container {
+  overflow: unset;
+}
+.bg_img {
+  position: sticky;
+  top: 80px;
+  display: block;
+  z-index: -1;
+  height: 620px;
+  background: url(../../images/bg/sub_bg1.png) no-repeat center / cover;
+}
+main {
+  position: relative;
+  padding-top: 80px;
+  margin-top: -620px;
+}
+
+.sub_bg {
+  height: 620px;
+  overflow: hidden;
+  padding: 17px 20px 53px;
+}
+
+.sub_bg .inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sub_bg .sub_depth {
+  font-size: 16px;
+  color: #f0f0f0;
+}
+.sub_bg .sub_depth .under {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.sub_bg .sub_depth em {
+  margin: 0 20px;
+  font-style: normal;
+}
+.sub_bg .bg_txt {
+  font-size: 36px;
+  letter-spacing: -1.08px;
+  line-height: 1.4;
+  color: #fff;
+}
+.sub_bg .bg_txt h2 {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  font-size: 59px;
+  font-weight: bold;
+  letter-spacing: -1.77px;
+  text-align: left;
+  color: #fff;
+}
+/* sub_nav */
+.sub_nav {
+  background: #fff;
+}
+.sub_nav .inner {
+  background: #f8f8f8;
+}
+.sub_nav .links {
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #191919;
+}
+.sub_nav .links li {
+  position: relative;
+}
+.sub_nav .links li + li {
+  margin-left: 53px;
+}
+.sub_nav .links li.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #e84c2c;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+}
+
+.sec {
+  background: #fff;
+}
+
+.sec .tit_wrap {
+  font-size: 24px;
+  letter-spacing: -0.72px;
+  color: #191919;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 100px;
+}
+.sec .tit_wrap h3 {
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -1.32px;
+  margin-right: 17px;
+}
+.sec .tit_wrap h4 {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+  padding-left: 16px;
+}
+.sec .tit_wrap h4::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background-color: #e84c2c;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+/* quick */
+.quick {
+  position: fixed;
+  top: 50%;
+  right: 36px;
+  transform: translate(0%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+.quick.mo {
+  display: none;
+}
+.quick ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.quick li {
+  position: relative;
+}
+.quick li + li {
+  margin-top: 40px;
+}
+.quick .btn {
+  width: 62px;
+  height: 62px;
+  border-radius: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.54px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.quick .btn.q1 {
+  background-color: #e9cd14;
+}
+.quick .btn.q2 {
+  background-color: #e84c2c;
+}
+.quick .btn.q3 {
+  background-color: #3da84c;
+}
+.quick.pc .btn:hover {
+  transition: width 0.3s ease;
+}
+.quick.pc .btn.q4:hover {
+  transition: width 0.5s ease;
+}
+.quick.pc .btn.q3:hover {
+  width: 300px;
+}
+.quick.pc .btn.q4:hover {
+  padding-right: 40px;
+}
+.quick.pc .btn.q5:hover {
+  justify-content: flex-start;
+}
+
+.quick.pc .btn.q5:hover {
+  width: 198px;
+}
+
+.quick .btn .icon {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick .btn .txt {
+  width: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  line-height: 1.4;
+}
+
+.quick.pc .btn:hover .txt {
+  width: auto;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.quick small {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: -7px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.42px;
+  color: #404040;
+  width: 76px;
+  display: block;
+  text-align: center;
+}
+.quick li:nth-child(1) small {
+  color: #e9cd14;
+}
+.quick li:nth-child(3) small {
+  color: #464646;
+}
+.quick li:nth-child(4) small {
+  color: #505050;
+}
+.quick li:nth-child(5) small {
+  color: #4d4d4d;
+}
+.quick li:hover small {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.quick .btn.q4 a {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.45px;
+  text-align: center;
+  color: #fff;
+}
+
+.quick .btn.q4 a + a {
+  position: relative;
+  margin-left: 18px;
+  padding-left: 18px;
+}
+
+.quick .btn.q4 a + a::before {
+  content: "";
+  width: 1px;
+  height: 34px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.quick .btn.sns {
+  background-color: rgba(55, 55, 55, 0.5);
+  text-align: center;
+}
+.quick .btn.sns .name {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.54px;
+  text-align: center;
+  color: #fff;
+}
+.quick.pc .btn.sns:hover .name {
+  display: none;
+}
+.quick .btn.sns a {
+  display: none;
+}
+.quick.pc .btn.sns:hover {
+  width: 249px;
+  background-color: #1a1a1a;
+  padding: 0 26px 0 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quick.pc .btn.sns:hover a {
+  display: block;
+}
+
+.quick .btn_top {
+  width: 59px;
+  height: 59px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: rgba(255, 255, 255, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-top: 27px;
+}
+
 footer {
   background: #fff;
 }
@@ -337,6 +648,95 @@ footer .inner.bot .right .time {
     width: 100%;
     max-width: none;
   }
+  /* sub_bg */
+  body.sub {
+    min-width: auto;
+  }
+
+  .bg_img {
+    height: 400px;
+  }
+
+  main {
+    padding-top: 80px;
+    margin-top: -400px;
+  }
+
+  .sub_bg {
+    height: 400px;
+    padding: 16px 20px 40px;
+  }
+
+  .sub_bg .sub_depth {
+    font-size: 14px;
+  }
+  .sub_bg .sub_depth em {
+    margin: 0 16px;
+  }
+  .sub_bg .bg_txt {
+    font-size: 24px;
+  }
+  .sub_bg .bg_txt h2 {
+    font-size: 40px;
+  }
+  /* sub_nav */
+  .sub_nav .inner {
+    max-width: 500px;
+    height: 36px;
+    position: relative;
+  }
+  .sub_nav .inner::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(0%, -50%);
+    z-index: 1;
+  }
+
+  .sub_nav .links {
+    height: auto;
+    background: #f8f8f8;
+
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .sub_nav .links li {
+    width: 100%;
+    text-align: center;
+    min-height: 36px;
+    align-items: center;
+    padding: 0 16px;
+    display: none;
+  }
+  .sub_nav .links li:first-child {
+    display: flex;
+  }
+  .sub_nav .show .links li {
+    display: flex;
+  }
+  .sub_nav .links li + li {
+    margin-left: 0;
+  }
+  .sub_nav .links li.active a {
+    color: #e84c2c;
+  }
+  .sub_nav .links li.active::before {
+    display: none;
+  }
+
+  .sec .tit_wrap {
+    font-size: 20px;
+    padding: 0 50px;
+  }
+  .sec .tit_wrap h3 {
+    font-size: 36px;
+    margin-right: 12px;
+  }
+
   footer .fo_nav .inner {
     padding: 0 20px;
   }
@@ -386,6 +786,53 @@ footer .inner.bot .right .time {
   }
   header .mo_gnb .main_menu .top .btn_close {
     font-size: 30px;
+  }
+  /* sub_bg */
+  .bg_img {
+    top: 60px;
+    height: 300px;
+  }
+  main {
+    padding-top: 60px;
+    margin-top: -300px;
+  }
+
+  .sub_bg {
+    height: 300px;
+    padding: 16px 20px 30px;
+  }
+
+  .sub_bg .sub_depth {
+    font-size: 12px;
+  }
+
+  .sub_bg .sub_depth em {
+    margin: 0 10px;
+  }
+  .sub_bg .bg_txt {
+    font-size: 16px;
+  }
+  .sub_bg .bg_txt h2 {
+    font-size: 32px;
+  }
+  /* sub_nav */
+  .sub_nav .links {
+    font-size: 14px;
+  }
+
+  .sec .tit_wrap {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  .sec .tit_wrap h3 {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .sec .tit_wrap h4 {
+    padding-left: 12px;
+  }
+  .sec .tit_wrap h4::before {
+    height: 20px;
   }
   footer .fo_nav {
     height: auto;

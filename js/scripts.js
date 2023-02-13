@@ -18,4 +18,12 @@ $(function () {
     $(".mo_gnb .main_menu").removeClass("on");
     $("body").removeClass("fixed");
   });
+
+  /**
+   * 서브 메뉴
+   */
+  $(".sub_nav .inner").click(function () {
+    console.log("click");
+    $(this).toggleClass("show");
+  });
 });
