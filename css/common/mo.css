@@ -1,6 +1,9 @@
-@media all and (max-width: 375px) {
+@media all and (max-width: 480px) {
   .sec {
-    padding-top: 60px;
+    padding-top: 40px;
+  }
+  .sec .tit_wrap{
+    max-width:460px
   }
   .sec .tit_wrap h3 {
     font-size: 24px;
@@ -47,14 +50,14 @@
     font-size: 14px;
   }
   .people.part2 {
-    /* margin-top: 10px; */
+    margin-top: 10px;
   }
   .people.part2 .card_content {
     /* background: #f8f8f8; */
     /* display: flex; */
     /* justify-content: flex-start; */
     /* align-items: center; */
-    /* padding: 33px; */
+    padding: 20px;
     /* font-size: 20px; */
   }
 
@@ -71,7 +74,7 @@
   }
 
   .people.part2 .card_content .name::after {
-    /* content: ""; */
+    content: "";
     /* width: 2px; */
     /* height: 24px; */
     /* background: #191919; */

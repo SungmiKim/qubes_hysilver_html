@@ -162,6 +162,9 @@
     font-size: 16px;
     margin-top: 20px;
   }
+  .con1 .doc {
+    font-size: 24px;
+  }
 
   .con2 {
     padding: 50px 20px;
@@ -251,6 +254,10 @@
     font-size: 15px;
     margin-top: 16px;
   }
+  .con1 .doc {
+    font-size: 16px;
+  }
+
 
   .con3::after {
     height: 300px;
