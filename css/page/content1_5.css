@@ -1,0 +1,9 @@
+.sec {
+  padding: 110px 20px 134px;
+}
+.board_area {
+  padding: 0 100px;
+  margin-top: 80px;
+  min-height: 1080px;
+  border: 1px solid;
+}
