@@ -19,9 +19,6 @@
   width: 295px;
   background: #f8f8f8;
 }
-.people .card_content .card:hover {
-  scale: 1.1;
-}
 .people .tit {
   position: relative;
   padding: 7px 16px;
@@ -80,9 +77,26 @@
   color: #e84c2c;
 }
 
-.people.part2{
-  margin-top: 10px;
+.people .card_content .card,
+.people.part1 .card_content .card .card_tit,
+.people.part1 .card_content .card.link a,
+.people.part3 .card_content .card .card_tit,
+.people.part3 .card_content .card.link a {
+  transition: all 0.5s ease-in-out;
 }
+.people.part1 .card_content .card:hover {
+  scale: 1.02;
+  color: #fff;
+  background: #e84c2c;
+}
+.people.part1 .card_content .card:hover .card_tit,
+.people.part1 .card_content .card.link:hover a {
+  color: #fff;
+}
+.people .card_content .card.link .card_name {
+  margin: 10px 0;
+}
+
 .people.part2 .card_content {
   background: #f8f8f8;
   display: flex;
@@ -127,6 +141,14 @@
   font-size: 16px;
   font-weight: bold;
   color: #3da84c;
+}
+.people.part3 .card_content .card:hover img {
+  scale: 1.02;
+  color: #fff;
+  background: #3da84c;
+}
+.people.part3 .card_content .card:hover .card_tit {
+  color: #fff;
 }
 
 .line {
