@@ -1,0 +1,15 @@
+.sec .tit_wrap {
+  padding-top: 110px;
+}
+.history {
+  padding: 57px 0 196px;
+}
+
+@media all and (max-width: 768px) {
+  .sec .tit_wrap {
+    padding-top: 80px;
+  }
+  .history {
+    padding: 40px 20px 100px;
+  }
+}
