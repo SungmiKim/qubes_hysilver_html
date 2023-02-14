@@ -1,3 +1,6 @@
+.ls {
+  letter-spacing: -0.9px;
+}
 .sec {
   padding-top: 112px;
 }
@@ -5,149 +8,193 @@
   margin-bottom: 60px;
 }
 
+.tit_wrap.mg1 {
+  margin-bottom: 20px;
+}
 .people {
   width: 100%;
   margin-top: 67px;
   padding: 0 100px;
 }
+.people .tit_wrap h4 {
+  margin: 18px 0;
+}
+.people.part3 .tit_wrap h4::before {
+  background-color: #3da84c;
+}
 .people .card_content {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  gap: 5px;
   margin: 15px 0;
 }
-.people .card_content .card {
-  width: 295px;
+.people .card {
+  width: calc(100% / 4);
   background: #f8f8f8;
+  overflow: hidden;
 }
-.people .tit {
-  position: relative;
-  padding: 7px 16px;
-  margin: 18px 0;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: -0.72px;
+.people .card_img {
+  height: 286px;
+  overflow: hidden;
 }
-.people .card_content .card .card_name {
+
+.people .card .card_name {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.people .card_content .card .card_name .name {
+.people .card .card_name .name {
   font-size: 30px;
   font-weight: bold;
 }
-.people .card_content .card .card_name .depart {
+.people .card .card_name .depart {
   font-size: 16px;
   font-weight: 500;
+  color: #373737;
 }
-.people .card_content .card .card_info {
-  padding: 12px 25px;
+.people .card .card_info {
+  padding: 12px 20px 16px;
+  position: relative;
+  overflow: hidden;
 }
 
-.people .card_content .card.link {
+.people .card.link {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 10px;
 }
-.people .card_content .card.link .card_name {
+.people .card.link .card_name {
   margin: 10px 0;
 }
+.people .card.link .card_info {
+  padding: 12px 25px 22px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
-.people.part1 .tit::before {
+.people .tit::before {
   content: "";
   width: 4px;
   height: 24px;
-  background-color: #d71820;
   position: absolute;
-  bottom: 5px;
+  bottom: 7px;
   left: 0;
 }
-.people.part1 .card_content .card .card_tit {
-  font-family: NotoSansKR;
-  font-size: 16px;
-  line-height: 1.81;
-  letter-spacing: -0.48px;
-  font-weight: bold;
-  color: #e84c2c;
+.people.part1 .tit::before {
+  background-color: #e84c2c;
 }
-.people.part1 .card_content .card.link .card_tit {
-  font-family: NotoSansKR;
-  font-size: 16px;
-  font-weight: bold;
-  color: #e84c2c;
+.people.part3 .tit::before {
+  background-color: #3da84c;
 }
 
-.people .card_content .card,
-.people.part1 .card_content .card .card_tit,
-.people.part1 .card_content .card.link a,
-.people.part3 .card_content .card .card_tit,
-.people.part3 .card_content .card.link a {
-  transition: all 0.5s ease-in-out;
+.people .card .card_tit {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
 }
-.people.part1 .card_content .card:hover {
-  scale: 1.02;
-  color: #fff;
-  background: #e84c2c;
+.people.part1 .card .card_tit {
+  color: #e84c2c;
 }
-.people.part1 .card_content .card:hover .card_tit,
-.people.part1 .card_content .card.link:hover a {
-  color: #fff;
-}
-.people .card_content .card.link .card_name {
-  margin: 10px 0;
+.people.part3 .card .card_tit {
+  color: #3da84c;
 }
 
+.people.part2 {
+  margin-top: 10px;
+}
 .people.part2 .card_content {
   background: #f8f8f8;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 33px;
-}
-.people.part2 .card_content {
   font-size: 20px;
 }
+
 .people.part2 .card_content .point {
   font-size: 20px;
   font-weight: bold;
 }
-.people.part2 .card_content small {
+.people.part2 .card_content .name {
+  position: relative;
   font-size: 24px;
   font-weight: bold;
+  margin-right: 38px;
+  padding-right: 38px;
 }
 
+.people.part2 .card_content .name::after {
+  content: "";
+  width: 2px;
+  height: 24px;
+  background: #191919;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
 .people.part3 {
   margin-bottom: 150px;
 }
-.people.part3 .tit::before {
+
+.people .card,
+.people .card .card_tit,
+.people .card.link a,
+.people .card.link .icon {
+  transition: all 0.5s ease;
+}
+
+.people .card .d_img {
+  transition: all 0.3s ease;
+}
+
+.people .card:hover .d_img {
+  transform: scale(1.1);
+}
+
+.people .card_info::before {
   content: "";
-  width: 4px;
-  height: 24px;
-  background-color: #3da84c;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 5px;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.people.part1 .card_info::before {
+  background: #e84c2c;
+}
+.people.part3 .card_info::before {
+  background: #5ec06c;
+}
+.people .card:hover {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.people .card:hover .card_info::before {
+  opacity: 1;
   left: 0;
 }
-.people.part3 .card_content .card .card_tit {
-  font-family: NotoSansKR;
-  font-size: 16px;
-  font-weight: bold;
-  color: #3da84c;
-  line-height: 1.81;
-  letter-spacing: -0.48px;
+
+.people .card .card_tit,
+.people .card .card_name,
+.people .card.link a {
+  position: relative;
+  z-index: 2;
 }
-.people.part3 .card_content .card.link .card_tit {
-  font-family: NotoSansKR;
-  font-size: 16px;
-  font-weight: bold;
-  color: #3da84c;
-}
-.people.part3 .card_content .card:hover img {
-  scale: 1.02;
+.people .card:hover .card_tit,
+.people .card:hover .depart,
+.people .card.link:hover a {
+  transition: all 0.2s ease;
   color: #fff;
-  background: #3da84c;
 }
-.people.part3 .card_content .card:hover .card_tit {
+.people .card.link:hover .icon {
+  margin: 8px;
   color: #fff;
 }
 
@@ -157,9 +204,10 @@
   margin: 120px 100px 85px;
 }
 
+/* con1 */
 .con1 {
   position: relative;
-  margin-bottom: 236px;
+  padding-bottom: 260px;
 }
 .con1 .cover {
   display: block;
@@ -167,12 +215,11 @@
 }
 .con1 .inner {
   position: absolute;
-  height: 420px;
-  bottom: -119px;
+  height: 410px;
+  bottom: 10px;
   left: 50%;
   transform: translate(-50%, 0%);
-  padding: 78px 288px 45px 127px;
-
+  padding: 78px 288px 95px 133px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.83), #fff);
 }
 .con1 .t_myeong {
@@ -195,4 +242,120 @@
 
 .con1 .desc > span {
   font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+  .sec {
+    padding-top: 80px;
+  }
+  .tit_wrap {
+    margin-bottom: 40px;
+  }
+  .sec .tit_wrap {
+    max-width: 500px;
+    margin: auto;
+    padding: 0;
+  }
+  .tit_wrap.mg1 {
+    margin-bottom: 20px;
+  }
+  .people {
+    max-width: 500px;
+    margin: 40px auto 0;
+    padding: 0;
+  }
+  .people .tit_wrap h4 {
+    margin: 16px 0;
+  }
+  .people .card_content {
+    gap: 0;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .people .card {
+    max-width: 296px;
+    margin-top: 10px;
+    width: calc(100% / 2 - 5px);
+  }
+  .people .card:nth-child(2n) {
+    margin-left: 10px;
+  }
+
+  .people .card_img {
+    height: auto;
+  }
+
+  .people .card .card_name .name {
+    font-size: 22px;
+  }
+  .people .card .card_name .depart {
+    font-size: 14px;
+  }
+  .people .card .card_info {
+    padding: 12px 16px;
+  }
+
+  .people .card.link .card_info {
+    padding: 12px 16px;
+  }
+
+  .people .card .card_tit {
+    font-size: 15px;
+  }
+
+  .people.part2 .card_content {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .people.part2 .card_content.r1 {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .people.part2 .card_content .point {
+    font-size: 16px;
+  }
+  .people.part2 .card_content .name {
+    font-size: 16px;
+  }
+  .people.part2 .card_content .name::after {
+    display: none;
+  }
+  .people.part2 .card_content .desc {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .people.part3 {
+    margin-bottom: 80px;
+  }
+
+  .line {
+    max-width: 500px;
+    margin: 80px auto 80px;
+  }
+
+  /* con1 */
+  .con1 {
+    padding-bottom: 80px;
+  }
+
+  .con1 .inner {
+    position: relative;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    padding: 40px;
+  }
+  .con1 .t_myeong {
+    font-size: 36px;
+  }
+  .con1 .desc {
+    font-size: 16px;
+    margin-top: 20px;
+  }
 }
