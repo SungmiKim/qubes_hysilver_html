@@ -1,0 +1,122 @@
+.sec {
+  padding-top: 0;
+  padding-bottom: 240px;
+}
+.tab_area {
+  width: calc(100% - 200px);
+  position: relative;
+  margin: -257px auto 0;
+  background: linear-gradient(to bottom, #fff, #fff 89%, #fff);
+  padding-top: 54px;
+}
+ul.tabs {
+  border-bottom: 3px solid #c5c5c5;
+  width: calc(100% - 200px);
+  margin: 0 auto 87px;
+}
+ul.tabs li {
+  width: 50%;
+  padding-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  color: #777;
+}
+ul.tabs li.current {
+  color: #e84c2c;
+}
+
+ul.tabs li.current::before {
+  bottom: -3px;
+}
+.tit_wrap.t1 {
+  margin-bottom: 105px;
+}
+.tit_wrap small {
+  color: #8a8a8a;
+}
+.tit_wrap.t2 {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tit_wrap.t2 h4::before {
+  height: 32px;
+}
+.tit_wrap.t2 .link {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+  text-align: right;
+  color: #373737;
+  line-height: 1.4;
+}
+.tit_wrap.t2 .link > a {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  color: #e84c2c;
+  margin-top: 4px;
+}
+
+.t_img {
+  padding: 0 20px;
+  margin-top: 12px;
+}
+
+.col + .col {
+  margin-top: 100px;
+}
+
+.col.c2 .tit_wrap h4::before {
+  background-color: #3da84c;
+}
+.col.c2 .tit_wrap.t2 .link > a {
+  color: #3da84c;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  position: relative;
+  width: 50%;
+}
+
+.links a + a {
+  margin-left: 10px;
+}
+.links a > .cen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1.2px;
+  color: #191919;
+}
+
+.links a > .cen {
+  line-height: 1.4;
+}
+
+.links a > small {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #373737;
+}
