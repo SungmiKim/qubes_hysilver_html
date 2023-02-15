@@ -34,12 +34,12 @@
   .people .card .card_info {
     padding: 12px 20px 16px;
   }
+  .people .card .card_name .name {
+    font-size: 18px;
+  }
   .people .card.link .card_name {
     margin: 10px 0;
   }
-  /* .people .card.link .card_info {
-    height: 352px;
-  } */
   .people .card .card_tit {
     font-size: 14px;
   }
@@ -55,6 +55,7 @@
     margin: 0;
     padding: 0;
   }
+
   .line {
     max-width: 296px;
     margin: 60px auto;
