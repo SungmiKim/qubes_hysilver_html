@@ -18,10 +18,9 @@
     padding: 0 20px 40px;
   }
   .c_main {
-    /* max-width: 476px; */
+    min-width: 318px;
     margin-bottom: 40px;
     width: calc(100% / 1);
-    /* color: #373737; */
   }
 
   /* c_main */
@@ -36,25 +35,17 @@
   }
   .c_tit > small {
     font-size: 12px;
-  }
-  .c_img > img {
-    /* width: 100%; */
+    letter-spacing:-.8px;
   }
   .c_info {
     min-height: 0;
     padding: 20px;
-    /* line-height: 36px; */
   }
   .c_wd {
     font-size: 14px;
   }
   .c_link {
-    font-size: 16px;
+    font-size: 14px;
   }
-  .c_link a {
-    /* color: #373737; */
-  }
-  .c2 .c_info {
-    /* line-height: 1.45; */
-  }
+
 }
