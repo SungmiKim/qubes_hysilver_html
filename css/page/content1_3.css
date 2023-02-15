@@ -110,11 +110,14 @@
   .inner.show {
     z-index: 3;
   }
+  .con {
+    background: #fff url(../../images/sub/content1_3/bg2.png) no-repeat center;
+  }
   .con > .inner {
     max-width: 500px;
   }
   .con::before {
-    height: 350px;
+    height: 300px;
   }
   .con::after {
     height: 300px;

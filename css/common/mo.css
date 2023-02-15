@@ -1,21 +1,21 @@
 @media all and (max-width: 540px) {
-  .sec {
-    /* padding: 0; */
-  }
-
   .con::before {
+
     height: 200px;
+    background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.89) 51%, rgba(255, 255, 255, 0.58) 84%, rgba(255, 255, 255, 0));
+    z-index: 1;
   }
   .con::after {
     height: 200px;
+
   }
   .con .tit_wrap {
-    padding: 40px 0;
+    padding: 40px 20px;
   }
 
   .c_con {
     width: 100%;
-    padding: 0 20px 20px;
+    padding: 0 20px 40px;
   }
   .c_main {
     /* max-width: 476px; */
@@ -46,11 +46,10 @@
     /* line-height: 36px; */
   }
   .c_wd {
-    /* font-size: 19px; */
+    font-size: 14px;
   }
   .c_link {
-    /* font-size: 24px; */
-    /* font-weight: bold; */
+    font-size: 16px;
   }
   .c_link a {
     /* color: #373737; */
