@@ -81,7 +81,27 @@ ul.tabs li.current::before {
   display: inherit;
 }
 /* TAB End */
-
+.bot_area {
+  position: relative;
+  padding-bottom: 222px;
+}
+.bot_area .box {
+  position: relative;
+  z-index: 1;
+  border-radius: 0 0 91px 91px;
+  box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
+  margin-top: 50px;
+  padding: 0 100px 96px;
+}
+.bot_area::after {
+  content: "";
+  width: 100%;
+  height: 568px;
+  background-color: #e84c2c;
+  position: absolute;
+  bottom: 0;
+}
 header {
   position: fixed;
   top: 0;
@@ -696,6 +716,18 @@ footer .inner.bot .right .time {
     font-size: 16px;
     padding-bottom: 16px;
   }
+  .bot_area {
+    padding-bottom: 100px;
+  }
+  .bot_area .box {
+    width: calc(100vw - 40px);
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 40px 80px;
+  }
+  .bot_area::after {
+    height: 400px;
+  }
   header .gnb,
   header .link_oth {
     display: none;
@@ -849,6 +881,13 @@ footer .inner.bot .right .time {
   ul.tabs li {
     font-size: 14px;
     padding-bottom: 12px;
+  }
+  .bot_area .box {
+    padding: 0 20px 50px;
+    border-radius: 0 0 46px 46px;
+  }
+  .bot_area::after {
+    height: 300px;
   }
   header {
     height: 60px;
