@@ -1,0 +1,61 @@
+@media all and (max-width: 540px) {
+  .sec {
+    /* padding: 0; */
+  }
+
+  .con::before {
+    height: 200px;
+  }
+  .con::after {
+    height: 200px;
+  }
+  .con .tit_wrap {
+    padding: 40px 0;
+  }
+
+  .c_con {
+    width: 100%;
+    padding: 0 20px 20px;
+  }
+  .c_main {
+    /* max-width: 476px; */
+    margin-bottom: 40px;
+    width: calc(100% / 1);
+    /* color: #373737; */
+  }
+
+  /* c_main */
+  .c_sub {
+    padding-bottom: 20px;
+  }
+  .c_tit {
+    min-height: 0;
+  }
+  .c_tit > h3 {
+    font-size: 18px;
+  }
+  .c_tit > small {
+    font-size: 12px;
+  }
+  .c_img > img {
+    /* width: 100%; */
+  }
+  .c_info {
+    min-height: 0;
+    padding: 20px;
+    /* line-height: 36px; */
+  }
+  .c_wd {
+    /* font-size: 19px; */
+  }
+  .c_link {
+    /* font-size: 24px; */
+    /* font-weight: bold; */
+  }
+  .c_link a {
+    /* color: #373737; */
+  }
+  .c2 .c_info {
+    /* line-height: 1.45; */
+  }
+}
