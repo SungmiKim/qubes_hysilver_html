@@ -8,8 +8,8 @@
   margin-bottom: 60px;
 }
 
-.tit_wrap.t2{
-  padding:0;
+.tit_wrap.t2 {
+  padding: 0;
 }
 
 .tit_wrap.mg1 {
@@ -361,5 +361,92 @@
   .con1 .desc {
     font-size: 16px;
     margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .sec {
+    padding: 60px 0;
+  }
+  .sec .tit_wrap {
+    max-width: none;
+    padding: 0 20px;
+  }
+  .sec .tit_wrap h3 {
+    font-size: 24px;
+  }
+  .tit_wrap.t2 {
+    padding: 0;
+  }
+  .tit_wrap.mg1 {
+    margin-bottom: 20px;
+  }
+
+  .people {
+    max-width: 296px;
+    margin: 20px auto 0;
+  }
+  .people .card:nth-child(2n) {
+    margin-left: 0;
+  }
+  .people .card {
+    width: 100%;
+    margin-top: 0;
+  }
+  .people .card:not(:last-of-type),
+  .people .card_content:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  .people .card .card_info {
+    padding: 12px 20px 16px;
+  }
+  .people .card .card_name .name {
+    font-size: 18px;
+  }
+  .people .card.link .card_name {
+    margin: 10px 0;
+  }
+  .people .card .card_tit {
+    font-size: 14px;
+  }
+  .people.part2 .card_content {
+    padding: 20px;
+  }
+  .people.part2 .card_content.r1 {
+    letter-spacing: -1.1px;
+    line-height: 24px;
+  }
+  .people.part2 .card_content .name {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .line {
+    max-width: 296px;
+    margin: 60px auto;
+  }
+
+  /* con1 */
+
+  .con1 .inner {
+    padding: 20px;
+  }
+  .con1 .t_myeong {
+    font-size: 24px;
+  }
+  .img_wrap {
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+  }
+
+  .img_wrap img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: none;
+    height: 100%;
   }
 }
