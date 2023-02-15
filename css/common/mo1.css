@@ -1,0 +1,114 @@
+@media all and (max-width: 540px) {
+  .sec {
+    padding-top: 50px;
+  }
+
+  .pic_hy ul.tabs {
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  .pic_hy ul.tabs li {
+    width: auto;
+    padding: 0 8px 16px;
+  }
+
+  /* common */
+  .bot_area .box {
+    padding: 0 20px 50px;
+    border-radius: 0 0 46px 46px;
+  }
+  .bot_area::after {
+    height: 300px;
+  }
+  /* common */
+  .pic_hy .tab_inner {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .pic_hy .view_img {
+    border-radius: 30px;
+    min-height: 250px;
+    /* margin: 16px 0 40px; */
+    /* overflow: hidden; */
+  }
+  .pic_hy .view_img img {
+    height: 250px;
+  }
+
+  .pic_hy .swiper-slide {
+    width: calc((130% - 6px) / 2);
+  }
+  .pic_hy .swiper-next,
+  .pic_hy .swiper-prev {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* width: 38px; */
+    /* height: 38px; */
+    /* border-radius: 100%; */
+    /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+    /* background-color: #fff; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* z-index: 1; */
+    /* cursor: pointer; */
+  }
+  .pic_hy .swiper-next {
+    /* left: 100%; */
+  }
+  .pic_hy .swiper-prev {
+    /* left: 0; */
+  }
+  .pic_hy .swiper-next::before {
+    /* content: ""; */
+    /* width: 13px; */
+    /* height: 19px; */
+    /* background: url(../../images/icon/icon_next.png) no-repeat center / 100%; */
+  }
+  .pic_hy .swiper-prev::before {
+    /* content: ""; */
+    /* width: 13px; */
+    /* height: 19px; */
+    /* background: url(../../images/icon/icon_prev.png) no-repeat center / 100%; */
+  }
+
+  .num_hy {
+    margin-top: 50px;
+  }
+  .num_hy .tit_wrap {
+    padding: 0 20px;
+  }
+  .num_hy .box ul {
+    flex-direction: column;
+  }
+  .num_hy .box ul li {
+    width: 100%;
+  }
+  .num_hy .box ul li + li {
+    margin-top: 20px;
+  }
+  .num_hy .box .name {
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .num_hy .box li:nth-child(4) .name {
+    height: auto;
+    line-height: 1;
+  }
+  .num_hy .box .name > span {
+    display: inline-block;
+  }
+  .num_hy .box .desc {
+    font-size: 24px;
+  }
+
+  .num_hy .box .desc > span {
+    font-size: 14px;
+    display: inline-block;
+  }
+}

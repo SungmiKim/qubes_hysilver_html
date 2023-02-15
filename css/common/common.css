@@ -692,7 +692,10 @@ footer .inner.bot .right .time {
   .pd100 {
     padding: 0 80px;
   }
-
+  ul.tabs li {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
   header .gnb,
   header .link_oth {
     display: none;
@@ -842,6 +845,10 @@ footer .inner.bot .right .time {
 @media all and (max-width: 540px) {
   .pd100 {
     padding: 0 20px;
+  }
+  ul.tabs li {
+    font-size: 14px;
+    padding-bottom: 12px;
   }
   header {
     height: 60px;
