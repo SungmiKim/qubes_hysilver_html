@@ -1,0 +1,152 @@
+.rd {
+  color: #e84c2c;
+}
+.gr {
+  color: #5ec06c;
+}
+.bk {
+  color: #8a8a8a;
+}
+.fb {
+  font-weight: bold;
+}
+
+.rd,
+.gr,
+.bk {
+  margin: 0 18px;
+}
+
+.sec {
+  padding-top: 0;
+  padding-bottom: 240px;
+}
+.sec::after {
+  content: "";
+  width: 100%;
+  height: 540px;
+  background: #e84c2c;
+  position: absolute;
+  bottom: 0;
+}
+.main {
+  width: calc(100% - 200px);
+  position: relative;
+  margin: -257px auto 0;
+  background: linear-gradient(to bottom, #fff, #fff 89%, #fff);
+}
+
+.map_area {
+  position: relative;
+  z-index: 2;
+  padding: 66px 95px;
+  border-radius: 0 0 91px 91px;
+  background: #fff;
+}
+
+/* map area */
+
+.m_line {
+  width: 100%;
+  height: 2px;
+  margin: 100px 0;
+  background: #e3e3e3;
+}
+
+.tit_wrap.t1 {
+  padding: 0 0 42px;
+}
+
+.g1 {
+  width: 100%;
+  min-height: 504px;
+  overflow: hidden;
+  background: bisque;
+  margin-bottom: 28px;
+}
+.g2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 68px;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.g2 .add_2::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 2px;
+  height: 36px;
+  margin: 0 32px;
+  background: #8a8a8a;
+}
+
+.g3 {
+  font-size: 24px;
+}
+.g3 .add_1 {
+  display: flex;
+  margin-bottom: 16px;
+}
+.g3 .add_1::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  bottom: -2px;
+  display: inline;
+  width: 4px;
+  height: 24px;
+  background: #e84c2c;
+  z-index: 2;
+}
+
+.g3 .add_2 {
+  display: flex;
+}
+.g3 .add_2::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  bottom: -2px;
+  display: flex;
+  width: 4px;
+  height: 24px;
+  background: #5ec06c;
+  z-index: 2;
+}
+
+.m_map2 h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.m_map2 small {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.bf {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.bf > h4::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  bottom: -2px;
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  margin-right: 6px;
+  background: #8a8a8a;
+  z-index: 2;
+}
+
+.bf > small {
+  margin-left: 10px;
+}
