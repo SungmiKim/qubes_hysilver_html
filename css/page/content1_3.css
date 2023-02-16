@@ -79,10 +79,10 @@
   display: block;
 }
 .c_main:hover .c_img .imgs {
-  transform: scale(1.13);
+  transform: scale(1.15);
 }
 .c_main:hover .c_link .a1 {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 /* c_main */
