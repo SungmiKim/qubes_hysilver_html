@@ -177,7 +177,7 @@
     padding: 0 0 40px;
   }
   .c_main {
-    min-width: 350px;
+    min-width: 340px;
     margin-bottom: 80px;
     width: calc(100% / 2 - 5px);
     display: flex;
