@@ -235,7 +235,7 @@
   .c_link {
     font-size: 18px;
     position: absolute;
-    bottom: -5px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -251,7 +251,7 @@
     height: 200px;
   }
   .con .tit_wrap {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 
   .c_con {
