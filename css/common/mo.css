@@ -1,13 +1,11 @@
 @media all and (max-width: 540px) {
   .con::before {
-
     height: 200px;
     background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.89) 51%, rgba(255, 255, 255, 0.58) 84%, rgba(255, 255, 255, 0));
     z-index: 1;
   }
   .con::after {
     height: 200px;
-
   }
   .con .tit_wrap {
     padding: 40px 20px;
@@ -15,10 +13,11 @@
 
   .c_con {
     width: 100%;
-    padding: 0 20px 40px;
+    padding: 0 0 40px;
   }
   .c_main {
     min-width: 318px;
+    max-width: 350px;
     margin-bottom: 40px;
     width: calc(100% / 1);
   }
@@ -35,7 +34,7 @@
   }
   .c_tit > small {
     font-size: 12px;
-    letter-spacing:-.8px;
+    letter-spacing: -0.8px;
   }
   .c_info {
     min-height: 0;
@@ -47,5 +46,4 @@
   .c_link {
     font-size: 14px;
   }
-
 }

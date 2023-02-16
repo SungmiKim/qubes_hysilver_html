@@ -67,6 +67,23 @@
   width: calc(100% / 2);
   color: #373737;
 }
+.c_img {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.trans {
+  transition: all 0.3s ease;
+}
+.c_main:hover .c_img::before {
+  display: block;
+}
+.c_main:hover .c_img .imgs {
+  transform: scale(1.13);
+}
+.c_main:hover .c_link .a1 {
+  margin-left: 10px;
+}
 
 /* c_main */
 .c_sub {
@@ -85,9 +102,38 @@
   font-weight: bold;
   margin-bottom: 12px;
 }
-.c_img > img {
-  width: 100%;
+.c_img {
+  position: relative;
 }
+.c_main .c_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.c_main.c1 .c_img::before {
+  background: rgba(232, 76, 44, 0.39);
+}
+.c_main.c2 .c_img::before {
+  background: rgba(94, 192, 108, 0.39);
+}
+.c_main.c3 .c_img::before,
+.c_main.c4 .c_img::before {
+  background: rgba(89, 109, 242, 0.39);
+}
+.c_main.c5 .c_img::before,
+.c_main.c6 .c_img::before {
+  background: rgba(255, 155, 0, 0.39);
+}
+.c_img .imgs {
+  width: 100%;
+  z-index: 1;
+}
+
 .c_info {
   padding: 24px 0;
   line-height: 36px;
@@ -114,7 +160,7 @@
     background: #fff url(../../images/sub/content1_3/bg2.png) no-repeat center;
   }
   .con > .inner {
-    max-width: 500px;
+    padding: 0 20px;
   }
   .con::before {
     height: 300px;
@@ -131,19 +177,24 @@
     padding: 0 0 40px;
   }
   .c_main {
+    min-width: 350px;
     margin-bottom: 80px;
     width: calc(100% / 2 - 5px);
+    display: flex;
+    flex-direction: column;
   }
 
   /* c_main */
   .c_sub {
     padding-bottom: 30px;
     word-break: keep-all;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   .c_tit {
-    margin: 12px 12px;
+    margin: 12px 0;
     line-height: 0.8;
-    min-height: 50px;
   }
   .c_tit > h3 {
     font-size: 20px;
@@ -152,23 +203,40 @@
   }
   .c_tit > small {
     font-size: 14px;
+    letter-spacing: -1.1px;
+  }
+
+  .c_info_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 
   .c_info {
-    min-height: 180px;
-    display: flex;
-    align-items: center;
+    flex: 1;
     padding: 20px 0;
     line-height: 1.45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .c_wd {
     font-size: 16px;
     padding: 0 10px;
+  }
+
+  .c_wd h4 > span {
+    display: block;
   }
   .c_main .c_wd br {
     display: none;
   }
   .c_link {
     font-size: 18px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
