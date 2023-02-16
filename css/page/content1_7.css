@@ -62,8 +62,23 @@ ul.tabs li.current::before {
 }
 
 .t_img {
-  padding: 0 20px;
+  position: relative;
+  padding: 0 90px 106px;
   margin-top: 12px;
+}
+.t_img .table {
+  position: relative;
+  z-index: 2;
+}
+.t_img .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  border-radius: 91px;
+  box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
 }
 
 .col + .col {
@@ -119,4 +134,128 @@ ul.tabs li.current::before {
   letter-spacing: -0.6px;
   text-align: left;
   color: #373737;
+}
+
+@media all and (max-width: 768px) {
+  .sec {
+    padding-bottom: 100px;
+  }
+
+  .con_bg {
+    width: 768px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .tab_area {
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+  }
+  ul.tabs {
+    width: calc(100% - 40px);
+    margin: 0 auto 50px;
+  }
+  ul.tabs li {
+    padding-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .tit_wrap.t1 {
+    margin-bottom: 80px;
+  }
+
+  .tit_wrap.t2 {
+    font-size: 28px;
+  }
+  .tit_wrap.t2 h4::before {
+    height: 100%;
+  }
+  .tit_wrap.t2 .link {
+    font-size: 20px;
+  }
+  .tit_wrap.t2 .link > a {
+    font-size: 16px;
+  }
+  .t_img {
+    padding: 0 30px 70px;
+    width: calc(100vw - 40px);
+    margin: 12px auto 0;
+  }
+  .col + .col {
+    margin-top: 80px;
+  }
+  .links {
+    padding: 0;
+    width: calc(100vw - 40px);
+    margin: auto;
+  }
+
+  .links a > .cen {
+    font-size: 4vw;
+  }
+
+  .links a > small {
+    bottom: 16%;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .sec {
+    padding-bottom: 80px;
+  }
+
+  .con_bg {
+    height: 250px;
+  }
+
+  ul.tabs {
+    margin: 0 auto 40px;
+  }
+
+  .tit_wrap.t1 {
+    margin-bottom: 50px;
+  }
+
+  .tit_wrap.t2 {
+    font-size: 20px;
+  }
+
+  .tit_wrap.t2 .link {
+    font-size: 16px;
+  }
+  .tit_wrap.t2 .link > a {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .t_img {
+    padding: 0 20px;
+    margin: 12px 0 0;
+    width: 100%;
+  }
+  .t_img .bg {
+    display: none;
+  }
+
+  .col + .col {
+    margin-top: 50px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links a {
+    max-width: 300px;
+    width: calc(100vw - 40px);
+  }
+
+  .links a + a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .links a > .cen {
+    font-size: 28px;
+  }
 }
