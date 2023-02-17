@@ -201,6 +201,9 @@ ul.tabs li.current::before {
 }
 
 @media all and (max-width: 768px) {
+  .container {
+    min-width: 618px;
+  }
   .sec {
     padding-bottom: 100px;
   }
