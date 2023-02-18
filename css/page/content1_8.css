@@ -272,7 +272,7 @@ ul.tabs li.current::before {
   }
   .m_map2 small {
     font-size: 18px;
-    margin-left: 8px;
+    margin: 0;
     letter-spacing: -1.2px;
     word-break: keep-all;
     text-indent: 2px;
