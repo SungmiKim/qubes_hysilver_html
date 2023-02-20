@@ -37,4 +37,18 @@ $(function () {
     $(this).addClass("current");
     $("#" + tab_id).addClass("current");
   });
+
+  /**
+   * sub_nav links active삽입
+   */
+  var name = $(location).attr("pathname"),
+    path = name.slice(1);
+
+  $(".sub_nav .links li").each(function () {
+    var li_path = $(this).find("a").attr("href");
+    if (path == li_path) {
+      // console.log("1");
+      $(this).addClass("active").sibling().removeClass("active");
+    }
+  });
 });
