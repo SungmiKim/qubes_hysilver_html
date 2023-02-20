@@ -37,7 +37,7 @@
   width: calc(100% - 200px);
   position: relative;
   z-index: 2;
-  margin: -257px auto 0;
+  margin: -310px auto 0;
   padding: 66px 95px;
   border-radius: 0 0 91px 91px;
   background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
@@ -52,6 +52,11 @@
   border-radius: 0 0 91px 91px;
   box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.15);
   z-index: 1;
+}
+
+.m_map3 {
+  position: relative;
+  z-index: 2;
 }
 
 /* map area */
@@ -143,7 +148,7 @@
   font-weight: bold;
   margin-bottom: 12px;
 }
-.m_map2 small {
+.m_map2 p {
   font-size: 20px;
   margin-right: 10px;
   margin-left: 10px;
@@ -283,7 +288,7 @@ ul.tabs li.current::before {
   .m_map2 h4 {
     font-size: 20px;
   }
-  .m_map2 small {
+  .m_map2 p {
     font-size: 18px;
     margin: 0;
     letter-spacing: -1.2px;
@@ -326,9 +331,10 @@ ul.tabs li.current::before {
     height: 200px;
   }
   .main {
-    min-width: 360px;
-    width: calc(100% - 10px);
-    margin: -120px auto 0;
+    min-width: 306px;
+    min-height: 250px;
+    width: calc(100%);
+    margin: 0;
     padding: 50px 10px;
     border-radius: 0 0 50px 50px;
   }
@@ -339,7 +345,7 @@ ul.tabs li.current::before {
   .up_img {
     position: relative;
     overflow: hidden;
-    min-height: 240px;
+    min-height: 250px;
   }
 
   .up_img img {
@@ -397,7 +403,7 @@ ul.tabs li.current::before {
     font-size: 14px;
     margin-bottom: 4px;
   }
-  .m_map2 small {
+  .m_map2 p {
     font-size: 14px;
     margin-right: 0px;
   }
