@@ -39,9 +39,19 @@
   z-index: 2;
   margin: -257px auto 0;
   padding: 66px 95px;
-  border-radius: 0 0 90px 90px;
-  box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 91px 91px;
   background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
+}
+.main::after {
+  content: "";
+  width: 100%;
+  height: 445px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 91px 91px;
+  box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 /* map area */
@@ -216,6 +226,9 @@ ul.tabs li.current::before {
     padding: 39px 10px;
     border-radius: 0 0 80px 80px;
   }
+  .main::after {
+    border-radius: 0 0 80px 80px;
+  }
 
   /* map area */
   .m_line {
@@ -299,5 +312,122 @@ ul.tabs li.current::before {
     width: 50%;
     padding-bottom: 16px;
     font-size: 16px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .container {
+    min-width: 375px;
+  }
+  .sec {
+    padding-bottom: 60px;
+  }
+  .sec::after {
+    height: 200px;
+  }
+  .main {
+    min-width: 370px;
+    width: calc(100% - 10px);
+    margin: -120px auto 0;
+    padding: 50px 10px;
+    border-radius: 0 0 50px 50px;
+  }
+  .main::after {
+    border-radius: 0 0 50px 50px;
+  }
+
+  .up_img {
+    position: relative;
+    overflow: hidden;
+    min-height: 240px;
+  }
+
+  .up_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* map area */
+
+  .m_line {
+    margin: 50px 0;
+  }
+  .tit_wrap.t1 {
+    padding: 0 0 30px;
+  }
+  .g1 {
+    min-height: 240px;
+    margin-bottom: 16px;
+  }
+  .g2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .g2 .imgs {
+    height: 18px;
+    margin-right: 4px;
+  }
+
+  .g3 {
+    font-size: 14px;
+  }
+  .g3 h4 {
+    margin: 0 10px 4px;
+  }
+  .g3 small {
+    line-height: 20px;
+  }
+  .g3 .add_1 {
+    margin-bottom: 10px;
+  }
+  .g3 .add_2 {
+    margin-top: -8px;
+  }
+  .g3 .add_2::before,
+  .g3 .add_1::before {
+    bottom: -16px;
+    height: 18px;
+  }
+
+  .m_map2 h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .m_map2 small {
+    font-size: 14px;
+    margin-right: 0px;
+  }
+  .bf {
+    margin-bottom: 20px;
+  }
+  .bf > h4::before {
+    bottom: -4px;
+    height: 20px;
+  }
+
+  .m_map3 .g2 {
+    font-size: 14px;
+  }
+  .m_map3 .g1 {
+    min-height: 240px;
+  }
+  .tit_wrap.t2 {
+    padding: 0 0 30px;
+  }
+  ul.tabs {
+    border-bottom: none;
+    flex-wrap: wrap;
+    margin: 0 auto 8px;
+  }
+  ul.tabs li {
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+  ul.tabs li.current::before {
+    bottom: 7px;
   }
 }
