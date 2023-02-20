@@ -231,6 +231,12 @@ ul.tabs li.current::before {
     padding: 39px 10px;
   }
 
+  .up_img .bg {
+    width: 768px;
+    height: 320px;
+    object-fit: cover;
+  }
+
   /* map area */
   .m_line {
     margin: 80px 0;
@@ -339,16 +345,8 @@ ul.tabs li.current::before {
     height: 300px;
   }
 
-  .up_img {
-    position: relative;
-    overflow: hidden;
-    min-height: 250px;
-  }
-
   .up_img .bg {
-    width: 768px;
-    height: 320px;
-    object-fit: cover;
+    height: 250px;
   }
 
   /* map area */

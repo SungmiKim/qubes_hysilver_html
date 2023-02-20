@@ -47,7 +47,6 @@ $(function () {
   $(".sub_nav .links li").each(function () {
     var li_path = $(this).find("a").attr("href");
     if (path == li_path) {
-      // console.log("1");
       $(this).addClass("active").sibling().removeClass("active");
     }
   });
