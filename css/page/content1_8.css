@@ -317,7 +317,7 @@ ul.tabs li.current::before {
 
 @media all and (max-width: 540px) {
   .container {
-    min-width: 375px;
+    min-width: 370px;
   }
   .sec {
     padding-bottom: 60px;
