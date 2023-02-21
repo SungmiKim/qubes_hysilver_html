@@ -228,7 +228,7 @@ ul.tabs li.current::before {
   .main {
     width: calc(100% - 40px);
     margin: 0 auto;
-    padding: 39px 10px;
+    padding: 39px 0;
   }
 
   .up_img .bg {
@@ -309,6 +309,9 @@ ul.tabs li.current::before {
   }
   .m_map3 .g1 {
     min-height: 300px;
+  }
+  .m_map3 .gmap_wrap {
+    padding: 0 10px;
   }
 
   ul.tabs {
@@ -399,6 +402,7 @@ ul.tabs li.current::before {
   .m_map2 p {
     font-size: 14px;
     margin-right: 0px;
+    line-height: 1.4;
   }
   .bf {
     margin-bottom: 20px;
@@ -414,6 +418,10 @@ ul.tabs li.current::before {
   .m_map3 .g1 {
     min-height: 240px;
   }
+  .m_map3 .gmap_wrap {
+    padding: 0 5px;
+  }
+
   .tit_wrap.t2 {
     padding: 0 0 30px;
   }
