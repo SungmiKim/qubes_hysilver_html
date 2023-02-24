@@ -41,13 +41,21 @@ $(function () {
   /**
    * sub_nav links active삽입
    */
-  var name = $(location).attr("pathname"),
-    path = name.slice(1);
+  var p_name = $(location).attr("pathname"),
+    pg_path = p_name.slice(1);
 
   $(".sub_nav .links li").each(function () {
     var li_path = $(this).find("a").attr("href");
-    if (path == li_path) {
-      $(this).addClass("active").sibling().removeClass("active");
+    if (pg_path == li_path) {
+      $(this).addClass("active").siblings().removeClass("active");
     }
+  });
+
+  /**
+   * 시설둘러보기 슬라이드
+   */
+  $(".swiper-slide").click(function () {
+    var img_path = $(this).find("img").attr("src");
+    $(".view_img img").attr("src", img_path);
   });
 });
