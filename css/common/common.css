@@ -102,7 +102,7 @@ ul.tabs li.current::before {
   position: absolute;
   bottom: 0;
 }
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -115,27 +115,27 @@ header {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
-header .inner {
+.header .inner {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .gnb {
+.header .gnb {
   display: flex;
   align-items: center;
   height: 100%;
 }
-header .gnb_link {
+.header .gnb_link {
   position: relative;
   height: 100%;
   display: flex;
   align-items: center;
 }
-header .gnb_link + .gnb_link {
+.header .gnb_link + .gnb_link {
   margin-left: 60px;
 }
-header .gnb_link > a {
+.header .gnb_link > a {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -146,11 +146,11 @@ header .gnb_link > a {
   border-bottom: 1px solid transparent;
 }
 
-header .gnb_link:hover > a {
+.header .gnb_link:hover > a {
   border-color: #707070;
 }
 
-header .gnb_link .sub {
+.header .gnb_link .sub {
   position: absolute;
   top: 100%;
   left: 0;
@@ -159,11 +159,11 @@ header .gnb_link .sub {
   padding: 16px 0;
   display: none;
 }
-header .gnb_link:hover .sub {
+.header .gnb_link:hover .sub {
   display: block;
 }
 
-header .gnb_link .sub a {
+.header .gnb_link .sub a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -176,36 +176,36 @@ header .gnb_link .sub a {
   padding-right: 26px;
 }
 
-header .gnb_link .sub a::after {
+.header .gnb_link .sub a::after {
   content: "";
   width: 6px;
   height: 10px;
-  background: url(../../images/icon/header/arrow1.png) no-repeat center / 100%;
+  background: url(../../images/icon/.header/arrow1.png) no-repeat center / 100%;
 }
 
-header .gnb_link .sub a:hover {
+.header .gnb_link .sub a:hover {
   background-color: rgba(70, 102, 171, 0.9);
   color: #fff;
 }
 
-header .gnb_link .sub a:hover::after {
-  background-image: url(../../images/icon/header/arrow2.png);
+.header .gnb_link .sub a:hover::after {
+  background-image: url(../../images/icon/.header/arrow2.png);
 }
-header .link_oth {
+.header .link_oth {
   font-size: 14px;
   font-weight: 300;
   color: #191919;
 }
 
-header .mo_gnb {
+.header .mo_gnb {
   display: none;
 }
 
-header .mo_gnb .mo_menu {
+.header .mo_gnb .mo_menu {
   font-size: 36px;
   cursor: pointer;
 }
-header .mo_gnb .main_menu {
+.header .mo_gnb .main_menu {
   position: fixed;
   top: 0;
   right: -320px;
@@ -349,6 +349,7 @@ main {
   background: #fff;
 }
 .sub_nav .inner {
+  max-width: none;
   background: #f8f8f8;
 }
 .sub_nav .links {
@@ -595,19 +596,19 @@ main {
   margin-top: 27px;
 }
 
-footer {
+.footer {
   background: #fff;
 }
-footer * {
+.footer * {
   font-family: "NanumSquareRound";
 }
-footer .fo_nav {
+.footer .fo_nav {
   height: 54px;
   border-top: 1px solid #797676;
   border-bottom: 1px solid #797676;
 }
 
-footer .fo_nav .inner {
+.footer .fo_nav .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -617,21 +618,21 @@ footer .fo_nav .inner {
   color: #000;
 }
 
-footer .fo_nav .left {
+.footer .fo_nav .left {
   display: flex;
   align-items: center;
 }
 
-footer .fo_nav .left li {
+.footer .fo_nav .left li {
   position: relative;
 }
 
-footer .fo_nav .left li + li {
+.footer .fo_nav .left li + li {
   margin-left: 40px;
   padding-left: 40px;
 }
 
-footer .fo_nav .left li + li::before {
+.footer .fo_nav .left li + li::before {
   content: "";
   width: 1px;
   height: 10px;
@@ -641,46 +642,46 @@ footer .fo_nav .left li + li::before {
   transform: translate(0%, -50%);
   background-color: #dbdbdb;
 }
-footer .fo_nav .left li:last-child a {
+.footer .fo_nav .left li:last-child a {
   color: #3317f2;
 }
-footer .fo_nav .right {
+.footer .fo_nav .right {
   padding-right: 130px;
 }
-footer .inner.bot {
+.footer .inner.bot {
   padding: 36px 0 70px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-footer .inner.bot .logo {
+.footer .inner.bot .logo {
   margin-bottom: 30px;
 }
-footer .inner.bot dl {
+.footer .inner.bot dl {
   font-size: 13px;
   letter-spacing: -0.33px;
   text-align: left;
   color: #191919;
 }
-footer .inner.bot dl dt {
+.footer .inner.bot dl dt {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -1px;
   color: #191919;
   margin-bottom: 8px;
 }
-footer .inner.bot dl .copy {
+.footer .inner.bot dl .copy {
   letter-spacing: normal;
   margin-top: 30px;
 }
 
-footer .inner.bot dl .copy span + span {
+.footer .inner.bot dl .copy span + span {
   margin-left: 20px;
 }
-footer .inner.bot .right.mo_ver {
+.footer .inner.bot .right.mo_ver {
   display: none;
 }
-footer .inner.bot .right .tel {
+.footer .inner.bot .right .tel {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.5px;
@@ -691,10 +692,10 @@ footer .inner.bot .right .tel {
   margin-bottom: 56px;
 }
 
-footer .inner.bot .right .tel span + span {
+.footer .inner.bot .right .tel span + span {
   margin-top: 7px;
 }
-footer .inner.bot .right .time {
+.footer .inner.bot .right .time {
   font-size: 13px;
   line-height: 1.54;
   letter-spacing: -0.65px;
@@ -728,14 +729,14 @@ footer .inner.bot .right .time {
   .bot_area::after {
     height: 400px;
   }
-  header .gnb,
-  header .link_oth {
+  .header .gnb,
+  .header .link_oth {
     display: none;
   }
-  header .mo_gnb {
+  .header .mo_gnb {
     display: block;
   }
-  header .mo_gnb .mo_menu {
+  .header .mo_gnb .mo_menu {
     font-size: 36px;
   }
   .container {
@@ -837,39 +838,39 @@ footer .inner.bot .right .time {
     margin-right: 12px;
   }
 
-  footer .fo_nav .inner {
+  .footer .fo_nav .inner {
     padding: 0 20px;
   }
 
-  footer .fo_nav .left li + li {
+  .footer .fo_nav .left li + li {
     margin-left: 16px;
     padding-left: 16px;
   }
-  footer .fo_nav .right {
+  .footer .fo_nav .right {
     padding-right: 0;
   }
-  footer .inner.bot {
+  .footer .inner.bot {
     padding: 30px 20px 60px;
   }
 
-  footer .inner.bot dl dt {
+  .footer .inner.bot dl dt {
     font-size: 16px;
   }
-  footer .inner.bot dl .copy {
+  .footer .inner.bot dl .copy {
     display: flex;
     flex-direction: column;
   }
 
-  footer .inner.bot dl .copy span + span {
+  .footer .inner.bot dl .copy span + span {
     margin-left: 0;
     margin-top: 6px;
   }
-  footer .inner.bot .right .tel {
+  .footer .inner.bot .right .tel {
     font-size: 16px;
     margin-bottom: 44px;
   }
 
-  footer .inner.bot .right .time {
+  .footer .inner.bot .right .time {
     font-size: 12px;
   }
 }
@@ -889,16 +890,16 @@ footer .inner.bot .right .time {
   .bot_area::after {
     height: 300px;
   }
-  header {
+  .header {
     height: 60px;
   }
-  header .mo_gnb .mo_menu {
+  .header .mo_gnb .mo_menu {
     font-size: 30px;
   }
-  header .mo_gnb .main_menu {
+  .header .mo_gnb .main_menu {
     padding: 32px;
   }
-  header .mo_gnb .main_menu .top .btn_close {
+  .header .mo_gnb .main_menu .top .btn_close {
     font-size: 30px;
   }
   /* sub_bg */
@@ -951,51 +952,51 @@ footer .inner.bot .right .time {
   .sec .tit_wrap h4::before {
     height: 20px;
   }
-  footer .fo_nav {
+  .footer .fo_nav {
     height: auto;
     padding: 16px 0;
   }
 
-  footer .fo_nav .inner {
+  .footer .fo_nav .inner {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  footer .fo_nav .left {
+  .footer .fo_nav .left {
     width: 100%;
     justify-content: space-between;
   }
 
-  footer .fo_nav .left li + li {
+  .footer .fo_nav .left li + li {
     margin-left: 0;
     padding-left: 0;
   }
 
-  footer .fo_nav .left li + li::before {
+  .footer .fo_nav .left li + li::before {
     display: none;
   }
 
-  footer .fo_nav .right {
+  .footer .fo_nav .right {
     margin: 8px auto 0;
   }
-  footer .inner.bot {
+  .footer .inner.bot {
     flex-direction: column;
   }
-  footer .inner.bot .logo {
+  .footer .inner.bot .logo {
     margin-bottom: 24px;
   }
-  footer .inner.bot dl .copy {
+  .footer .inner.bot dl .copy {
     margin-top: 24px;
   }
 
-  footer .inner.bot .right.pc_ver {
+  .footer .inner.bot .right.pc_ver {
     display: none;
   }
-  footer .inner.bot .right.mo_ver {
+  .footer .inner.bot .right.mo_ver {
     display: block;
     margin-bottom: 20px;
   }
-  footer .inner.bot .right .tel {
+  .footer .inner.bot .right .tel {
     margin-bottom: 30px;
   }
 }
