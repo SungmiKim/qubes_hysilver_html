@@ -56,6 +56,18 @@
   word-break: keep-all;
   line-height: 1.2;
 }
+
+.sec2 .tab_con .con2 {
+  margin: 0 88px 70px;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 1.4;
+}
+
+.sec2 .tab_con .con2 h3 {
+  text-align: left;
+}
+
 .sec2 .img_row {
   display: flex;
   flex-direction: column;
@@ -71,6 +83,10 @@
   color: #191919;
   line-height: 1.4;
   width: calc(100% - 200px);
+}
+.sec2 .img_row .desc_wrap.add {
+  padding: 60px 0px 96px 50px;
+  letter-spacing: -1.2px;
 }
 .sec2 .desc_row + .desc_row {
   margin-top: 96px;
@@ -102,6 +118,9 @@
   margin-top: 40px;
   word-break: keep-all;
 }
+.sec2 .desc_row .desc.mg {
+  margin-top: 14px;
+}
 
 .sec2 .tit_double {
   display: flex;
@@ -123,12 +142,25 @@
   margin: 62px auto 0;
   width: fit-content;
 }
+
 .sec2 .tit_wrap.t3 .sub_desc {
   padding-left: 16px;
   margin-top: 10px;
   font-size: 20px;
   line-height: 2;
   letter-spacing: -0.6px;
+}
+.sec2 .tit_wrap.t4 {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 74px 0 14px;
+}
+.sec2 .tit_wrap.t4 .sub_desc {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -1px;
 }
 
 @media all and (max-width: 768px) {
@@ -167,6 +199,11 @@
     font-size: 24px;
     margin-bottom: 30px;
   }
+  .sec2 .tab_con .con2 {
+    margin: 0 0px 30px;
+    font-size: 20px;
+  }
+
   .sec2 .img_row > img {
     max-height: 285px;
     height: 38vw;
@@ -178,6 +215,11 @@
     padding: 30px 0 50px;
     font-size: 16px;
     width: 100%;
+  }
+  .sec2 .img_row .desc_wrap.add {
+    padding: 30px 0px 50px;
+    letter-spacing: -1.2px;
+    word-break: keep-all;
   }
   .sec2 .desc_row + .desc_row {
     margin-top: 50px;
@@ -222,6 +264,13 @@
     font-size: 15px;
     line-height: 1.6;
   }
+  .sec2 .tit_wrap.t4 {
+    margin: 30px 0 14px;
+  }
+  .sec2 .tit_wrap.t4 .sub_desc {
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }
 
 @media all and (max-width: 540px) {
@@ -260,10 +309,16 @@
     padding: 30px 0;
   }
 
+  .sec2 .tab_con .con2 {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
   .sec2 .tab_con h3 {
     font-size: 22px;
     margin-bottom: 20px;
   }
+
   .sec2 .img_row > img {
     min-height: 180px;
   }
@@ -272,6 +327,11 @@
     padding: 30px 20px;
     font-size: 14px;
     border-radius: 0 0 20px 20px;
+  }
+  .sec2 .img_row .desc_wrap.add {
+    padding: 30px 20px;
+    letter-spacing: -1.2px;
+    word-break: keep-all;
   }
   .sec2 .desc_row + .desc_row {
     margin-top: 30px;
@@ -305,6 +365,12 @@
     padding: 0;
   }
   .sec2 .tit_wrap.t3 .sub_desc {
+    font-size: 14px;
+  }
+  .sec2 .tit_wrap.t4 {
+    margin: 20px 0 12px;
+  }
+  .sec2 .tit_wrap.t4 .sub_desc {
     font-size: 14px;
   }
 }
