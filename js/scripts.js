@@ -57,12 +57,10 @@ $(function () {
   $(".tap_menu").click(function () {
     var str = $(this).data("tab");
     var num = str.replace("tab_", "");
-
     var path1 = $("#tab_" + num)
       .find(".swiper-slide:first-child img")
       .attr("src");
 
-    console.log(num);
     $(".view_img img").attr("src", path1);
   });
 
