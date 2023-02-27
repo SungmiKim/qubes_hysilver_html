@@ -518,6 +518,9 @@
     font-size: 16px;
     padding: 0 20px;
   }
+  .sec2 .page_tit.center {
+    padding: 0 20px;
+  }
   .sec2 .page_tit h2 {
     font-size: 24px;
     text-align: center;
