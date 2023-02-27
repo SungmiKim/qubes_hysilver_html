@@ -685,8 +685,17 @@
   .sec2 .t3.big.mg_t {
     margin-top: 20px;
   }
+  .sec2 .t3.big.mg_t h4 {
+    margin-bottom: 20px;
+  }
   .sec2 .t3.big.mg_t .sub_desc {
     margin: 16px 0;
+  }
+  .sec2 .t3.big.mg_t .t_con .img_wrap {
+    align-items: center;
+  }
+  .sec2 .t3.big.mg_t .t_con .img_wrap img {
+    width: 80%;
   }
   .sec2 .tit_wrap.t4 {
     margin: 20px 0 12px;
@@ -696,13 +705,18 @@
   }
 }
 
-@media all and (max-width: 537px) {
-  .sec2 .tit_wrap h4.sub_tit2::before {
-    top: 15%;
+@media all and (max-width: 409px) {
+  .sec2 .tit_wrap h4.sub_tit3::before {
+    top: 28%;
   }
 }
 @media all and (max-width: 503px) {
   .sec2 .tit_wrap h4.sub_tit::before {
     top: 12%;
+  }
+}
+@media all and (max-width: 537px) {
+  .sec2 .tit_wrap h4.sub_tit2::before {
+    top: 15%;
   }
 }
