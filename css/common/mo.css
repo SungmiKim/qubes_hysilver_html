@@ -1,0 +1,84 @@
+@media all and (max-width: 768px) {
+  .sec3 ul.tabs li {
+    /* width: auto; */
+    /* padding: 0 50px; */
+  }
+  .sec3 .tab_tit {
+    /* font-size: 20px; */
+    /* letter-spacing: -0.6px; */
+    /* text-align: left; */
+    /* color: #191919; */
+    /* line-height: 1.4; */
+  }
+  .sec3 .tab_tit h3 {
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    /* text-align: left; */
+    /* margin-bottom: 0; */
+  }
+
+  .sec3 .tab_tit > p {
+    /* word-break: keep-all; */
+    /* margin: 14px 0 90px; */
+    /* letter-spacing: -0.04em; */
+  }
+  .sec3 .tit_wrap.t4 {
+    /* font-size: 30px; */
+  }
+  .sec3 .tit_wrap.t4 .t_con {
+    /* padding-left: 16px; */
+  }
+  .sec3 .tit_wrap .sub_desc.txt {
+    /* line-height: 1.4; */
+    /* word-break: keep-all; */
+  }
+
+  .sec3 .img_1_1 {
+    /* margin-top: 40px; */
+  }
+
+  .sec2 .img_double {
+    /* position: relative; */
+    /* z-index: 1; */
+  }
+  .sec2 .img_double::after {
+    /* content: ""; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 50%; */
+    /* transform: translate(-50%, 0%); */
+    /* width: 4px; */
+    /* height: 390px; */
+    /* background-color: #fff; */
+  }
+  .sec2 .img_double + .desc_wrap {
+    /* z-index: 2; */
+  }
+
+  .sec3 .desc_row .tit.double {
+    /* font-size: 25px; */
+    /* display: flex; */
+    /* align-items: center; */
+  }
+
+  .sec3 .desc_row .tit.double .bar {
+    /* display: block; */
+    /* width: 4px; */
+    /* height: 24px; */
+    /* background-color: #e84c2c; */
+    /* margin: 0 67px; */
+  }
+
+  .sec3 .img_row.r2 .tit .bar {
+    /* margin: 0 91px; */
+  }
+
+  .sec3 .img_row.r4 .tit .bar {
+    /* margin: 0 16px 0 54px; */
+  }
+  .sec3 .img_row.r4 .desc_wrap {
+    /* padding: 60px 30px 96px 20px; */
+    /* width: calc(100% - 100px); */
+    /* margin-left: auto; */
+  }
+}
