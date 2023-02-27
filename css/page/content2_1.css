@@ -1,3 +1,6 @@
+.sec2 .tit_wrap h4.sub_tit::before {
+  top: 17%;
+}
 .sec2 .page_tit {
   font-size: 24px;
   letter-spacing: -0.72px;
@@ -5,6 +8,9 @@
   text-align: left;
   padding-left: 100px;
   padding-right: 20px;
+}
+.sec2 .page_tit.center {
+  padding: 0 250px;
 }
 .sec2 .page_tit h2 {
   font-size: 44px;
@@ -22,7 +28,17 @@
   justify-content: center;
   gap: 0 10px;
 }
-.sec2 .page_top .img_wrap > img {
+.sec2 .img_row .img_wrap {
+  margin: auto;
+  max-width: 1920px;
+  padding: 26px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0 5px;
+}
+.sec2 .page_top .img_wrap > img,
+.sec2 .img_row .img_wrap > img {
   width: 50%;
 }
 .sec2 ul.tabs {
@@ -206,7 +222,7 @@
   margin-top: 70px;
 }
 .sec2 .tit_wrap.t3.big.mg_t img {
-  margin: 24px 12px 90px;
+  margin: 24px 0 90px;
 }
 .sec2 .tit_wrap.t3.big.mg_t .t_con {
   margin: 0;
@@ -273,6 +289,9 @@
 }
 
 @media all and (max-width: 768px) {
+  .sec2 .tit_wrap h4.sub_tit::before {
+    top: 14%;
+  }
   .sec {
     padding-top: 80px;
   }
@@ -280,11 +299,17 @@
     font-size: 18px;
     padding: 0 30px;
   }
+  .sec2 .page_tit.center {
+    padding: 0 60px;
+  }
   .sec2 .page_tit h2 {
     font-size: 34px;
   }
   .sec2 .page_top .img_wrap {
     padding: 50px 0;
+  }
+  .sec2 .img_row .img_wrap {
+    padding: 20px 0;
   }
 
   .sec2 ul.tabs {
@@ -414,7 +439,7 @@
     margin-top: 30px;
   }
   .sec2 .tit_wrap.t3.big.mg_t img {
-    margin: 18px 12px 40px;
+    margin: 18px 0px 20px;
   }
   .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
     line-height: 1.6;
@@ -451,9 +476,21 @@
     flex-direction: column;
     padding: 30px 0;
   }
-  .sec2 .page_top .img_wrap > img {
+  .sec2 .img_row .img_wrap {
+    gap: 10px 0;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sec2 .page_top .img_wrap > img,
+  .sec2 .img_row .img_wrap > img {
     width: 100%;
   }
+
+  .sec2 .tit_wrap.t3.big.mg_t img {
+    margin: 0;
+  }
+
   .sec2 .bot_area .box {
     border-radius: 0 0 50px 50px;
   }
@@ -563,6 +600,9 @@
     margin: 20px auto 0;
     padding: 0;
   }
+  .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
+    margin-bottom: 16px;
+  }
   .sec2 .tit_wrap.t3 .sub_desc {
     font-size: 14px;
   }
@@ -576,6 +616,14 @@
     font-weight: normal;
     margin-top: 10px;
     padding: 0;
+  }
+  .sec2 .tit_wrap.t3.big .sub_desc.mg {
+    font-weight: normal;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .sec2 .tit_wrap.t3.big.mg_t {
+    margin-top: 0px;
   }
   .sec2 .tit_wrap.t4 {
     margin: 20px 0 12px;
