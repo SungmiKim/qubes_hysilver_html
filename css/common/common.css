@@ -158,7 +158,9 @@ ul.tabs li.current::before {
 .header .gnb_link:hover > a {
   border-color: #e84c2c;
 }
-
+.header .gnb_link.active > a {
+  border-color: #e84c2c;
+}
 .header .gnb_link .sub {
   position: absolute;
   top: 100%;

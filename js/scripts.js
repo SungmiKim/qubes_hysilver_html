@@ -51,6 +51,14 @@ $(function () {
     }
   });
 
+  if (p_name.indexOf("content1") === 1) {
+    console.log("content1");
+    $(".header .gnb_link:nth-child(1)").addClass("active");
+  } else if (p_name.indexOf("content2") === 1) {
+    $(".header .gnb_link:nth-child(2)").addClass("active");
+  } else {
+    $(".header .gnb_link:nth-child(3)").addClass("active");
+  }
   /**
    * 시설둘러보기 슬라이드
    */
