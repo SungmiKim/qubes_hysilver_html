@@ -43,6 +43,13 @@ body.fixed {
 .mt0 {
   margin-top: 0 !important;
 }
+.le-3e {
+  letter-spacing: -0.03em;
+}
+.le-6e {
+  letter-spacing: -0.06em;
+}
+
 /* TAB */
 ul.tabs {
   width: 100%;
@@ -596,6 +603,7 @@ main {
   justify-content: center;
   border-radius: 100%;
   margin-top: 27px;
+  cursor: pointer;
 }
 
 .footer {

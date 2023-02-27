@@ -68,4 +68,14 @@ $(function () {
     var img_path = $(this).find("img").attr("src");
     $(".view_img img").attr("src", img_path);
   });
+
+  $(".quick .btn_top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      400
+    );
+    return false;
+  });
 });
