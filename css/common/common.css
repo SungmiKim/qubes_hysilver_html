@@ -950,6 +950,7 @@ main {
   }
   .sec .tit_wrap h4 {
     padding-left: 12px;
+    letter-spacing: -1.2px;
   }
   .sec .tit_wrap h4::before {
     height: 20px;

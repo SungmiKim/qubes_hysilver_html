@@ -1,6 +1,9 @@
 .sec2 .tit_wrap h4.sub_tit::before {
   top: 17%;
 }
+.sec2 .tit_wrap h4.sub_tit2::before {
+  top: 26%;
+}
 .sec2 .page_tit {
   font-size: 24px;
   letter-spacing: -0.72px;
@@ -292,6 +295,9 @@
   .sec2 .tit_wrap h4.sub_tit::before {
     top: 14%;
   }
+  .sec2 .tit_wrap h4.sub_tit2::before {
+    top: 20%;
+  }
   .sec {
     padding-top: 80px;
   }
@@ -460,6 +466,12 @@
 }
 
 @media all and (max-width: 540px) {
+  .sec2 .tit_wrap h4.sub_tit::before {
+    top: 12%;
+  }
+  .sec2 .tit_wrap h4.sub_tit2::before {
+    top: 16%;
+  }
   .sec {
     padding-top: 50px;
   }
@@ -541,6 +553,9 @@
     text-align: center;
   }
 
+  .sec2 .tab_con .con2.mo_ver p.mo {
+    font-size: 16px;
+  }
   .sec2 .tab_con h3 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -623,7 +638,7 @@
     padding: 0;
   }
   .sec2 .tit_wrap.t3.big.mg_t {
-    margin-top: 0px;
+    margin-top: 20px;
   }
   .sec2 .tit_wrap.t4 {
     margin: 20px 0 12px;
