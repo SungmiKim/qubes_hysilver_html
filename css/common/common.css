@@ -184,7 +184,7 @@ ul.tabs li.current::before {
 }
 
 .header .gnb_link .sub a:hover {
-  background-color: rgba(70, 102, 171, 0.9);
+  background-color: rgba(232, 76, 44, 0.9);
   color: #fff;
 }
 

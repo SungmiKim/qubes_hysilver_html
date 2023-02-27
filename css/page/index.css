@@ -92,7 +92,7 @@ header.on {
 }
 .sticky-elem.f .inner.show {
   display: flex;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   max-width: none;
 }
@@ -485,13 +485,19 @@ header.on {
 
 @media all and (max-width: 540px) {
   .scroll-section {
-    padding: 50px;
+    padding: 50px 20px;
   }
   .btn_skip img {
     width: 50px;
   }
   .main-message p {
     font-size: 24px;
+  }
+  .scroll-section.skip .sticky-elem.f .inner {
+    padding: 0;
+  }
+  .sticky-elem.f .inner.show {
+    width: 100%;
   }
 
   .sticky-elem.f a {
