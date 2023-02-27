@@ -112,7 +112,7 @@
         </div>
       </header>
       <section class="scroll-section" id="scroll-section-0">
-        <a href="#scroll-section-1" class="btn_skip">
+        <a href="#main-message-f" class="btn_skip">
           <img src="./images/icon/icon_skip.png" alt="skip" />
         </a>
         <div class="sticky-elem sticky-elem-video">
@@ -125,24 +125,24 @@
             <source src="./video/video.mp4" type="video/mp4" />
           </video>
         </div>
-        <div class="sticky-elem main-message a">
+        <div class="sticky-elem main-message a sticky-skip">
           <p>편안하고</p>
         </div>
-        <div class="sticky-elem main-message b">
+        <div class="sticky-elem main-message b sticky-skip">
           <p>가족이 기다리고 있는 곳</p>
         </div>
-        <div class="sticky-elem main-message c">
+        <div class="sticky-elem main-message c sticky-skip">
           <p>하루 빨리 돌아가실 수 있도록 <br />노력하겠습니다</p>
         </div>
-        <div class="sticky-elem main-message d">
+        <div class="sticky-elem main-message d sticky-skip">
           <p>[기쁜 인연 희연]</p>
         </div>
-        <div class="sticky-elem main-message e">
+        <div class="sticky-elem main-message e sticky-skip">
           <div class="inner">
             <img src="./images/img/main_logo.png" alt="logo" />
           </div>
         </div>
-        <div class="sticky-elem main-message f">
+        <div class="sticky-elem main-message f sticky-skip" id="main-message-f">
           <div class="inner">
             <a href="content1_1.html">희연의 이야기</a>
             <a href="content3_1_1.html">희연 커뮤니티케어센터</a>
@@ -432,17 +432,17 @@
           $(".col.c" + num + " .txt.t" + idx + "").addClass("on");
         }, 4000);
       }
-      // videoBar(1, 4);
-      // videoBar(2, 3);
-      // videoBar(3, 5);
+      videoBar(1, 4);
+      videoBar(2, 3);
+      videoBar(3, 5);
 
       function loadedData() {
         $(".poster").addClass("hide");
       }
 
-      // $("a").click(function (e) {
-      //   e.preventDefault();
-      // });
+      $(".btn_skip").click(function () {
+        $(".scroll-section").addClass("skip");
+      });
     </script>
   </body>
 </html>

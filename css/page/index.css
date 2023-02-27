@@ -19,6 +19,18 @@ header.on {
   padding: 100px;
   background: #fff;
 }
+.scroll-section.skip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scroll-section.skip .sticky-skip {
+  position: relative;
+  opacity: 1 !important;
+  height: 100vh;
+  top: unset;
+  transform: none !important;
+}
 
 .btn_skip {
   position: fixed;

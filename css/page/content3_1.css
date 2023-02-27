@@ -13,6 +13,7 @@
   text-align: left;
   color: #191919;
   line-height: 1.4;
+  padding: 0 20px;
 }
 .sec3 .tab_tit h3 {
   font-size: 30px;
@@ -84,4 +85,49 @@
   padding: 60px 30px 96px 20px;
   width: calc(100% - 100px);
   margin-left: auto;
+}
+@media all and (max-width: 768px) {
+  .sec3 ul.tabs li {
+    padding: 0 30px;
+  }
+  .sec3 .tab_tit {
+    font-size: 16px;
+  }
+  .sec3 .tab_tit h3 {
+    font-size: 22px;
+  }
+  .sec3 .tab_tit h3 br {
+    display: none;
+  }
+
+  .sec3 .tab_tit > p {
+    margin: 14px 0 50px;
+  }
+  .sec3 .tit_wrap.t4 {
+    font-size: 22px;
+  }
+  .sec3 .tit_wrap.t4 .t_con {
+    padding-left: 12px;
+  }
+
+  .sec3 .img_1_1 {
+    margin-top: 20px;
+  }
+
+  .sec3 .desc_row .tit.double {
+    font-size: 18px;
+  }
+  .sec3 .desc_row .tit.double > span {
+    text-align: center;
+    display: block;
+    width: calc(50% - 2px);
+  }
+  .sec3 .desc_row .tit.double .bar {
+    margin: 0 !important;
+  }
+
+  .sec3 .img_row.r4 .desc_wrap {
+    padding: 30px 20px;
+    width: 100%;
+  }
 }
