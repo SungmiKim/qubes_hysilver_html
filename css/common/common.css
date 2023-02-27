@@ -690,10 +690,12 @@ main {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 56px;
+  color: #e84c2c;
 }
 
 .footer .inner.bot .right .tel span + span {
   margin-top: 7px;
+  color: #3da84c;
 }
 .footer .inner.bot .right .time {
   font-size: 13px;
