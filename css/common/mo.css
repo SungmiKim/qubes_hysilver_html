@@ -32,9 +32,18 @@
     /* position: relative; */
     /* z-index: 1; */
   }
+
   .sec2 .img_double::after {
     display: none;
   }
+
+  .sec2 .img_double > img {
+    max-height: 285px;
+    height: 38vw;
+    min-height: 200px;
+    object-fit: cover;
+  }
+
   .sec2 .img_double + .desc_wrap {
     /* z-index: 2; */
   }
