@@ -16,6 +16,23 @@
   margin-top: 40px;
 }
 
+.sec4 {
+  padding-top: 100px;
+}
+.sec4 .bot_area .box {
+  margin-top: 0;
+}
+.sec4 ul.tabs {
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.sec4 ul.tabs li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 @media all and (max-width: 768px) {
   .sec2 .page_tit h2 {
     font-size: 22px;
