@@ -4,6 +4,7 @@
 .sec2 .tit_wrap h4.sub_tit2::before {
   top: 26%;
 }
+
 .sec2 .page_tit {
   font-size: 24px;
   letter-spacing: -0.72px;
@@ -34,7 +35,7 @@
 .sec2 .img_row .img_wrap {
   margin: auto;
   max-width: 1920px;
-  padding: 26px 0;
+  padding: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -69,7 +70,7 @@
   margin-top: 0;
 }
 .sec2 .box.sub2 .row_con {
-  padding: 90px 100px 47px;
+  padding: 90px 100px 100px;
 }
 .sec2 .box.sub2 .img_row .desc_wrap {
   margin-top: 0;
@@ -131,6 +132,12 @@
   padding: 60px 0px 96px 50px;
   letter-spacing: -1.2px;
 }
+.sec2 .img_row .d_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sec2 .desc_row + .desc_row {
   margin-top: 96px;
 }
@@ -162,6 +169,7 @@
 .sec2 .desc_row .desc.mg {
   margin-top: 14px;
 }
+
 .sec2 .point ul.p_con {
   display: flex;
   gap: 24px;
@@ -224,14 +232,21 @@
 .sec2 .tit_wrap.t3.big.mg_t {
   margin-top: 70px;
 }
-.sec2 .tit_wrap.t3.big.mg_t img {
-  margin: 24px 0 90px;
+.sec2 .tit_wrap.t3.big.mg_t h4 {
+  margin-bottom: 14px;
 }
+.sec2 .tit_wrap.t3.big.mg_t img,
 .sec2 .tit_wrap.t3.big.mg_t .t_con {
   margin: 0;
 }
 .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
   line-height: 2;
+}
+.sec2 .tit_wrap.t3.big.mg_t .sub_desc.lh {
+  line-height: 1.4;
+}
+.sec2 .tit_wrap.t3.big.mg_t .sub_desc.mg {
+  margin: 90px 0 20px;
 }
 
 .sec2 .tit_wrap.t3.big .t_con {
@@ -265,11 +280,13 @@
   line-height: 1.4;
   letter-spacing: -1px;
 }
+
 .sec .tit_wrap .s_con {
   width: 100%;
   display: flex;
   gap: 120px;
 }
+
 .sec .tit_wrap .service {
   margin: 20px;
 }
@@ -315,7 +332,7 @@
     padding: 50px 0;
   }
   .sec2 .img_row .img_wrap {
-    padding: 20px 0;
+    padding: 0;
   }
 
   .sec2 ul.tabs {
@@ -368,6 +385,14 @@
     padding: 30px 0px 50px;
     letter-spacing: -1.2px;
     word-break: keep-all;
+  }
+  .sec2 .img_row .d_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec2 .img_row .d_wrap .d2 {
+    margin-top: 20px;
   }
   .sec2 .desc_row + .desc_row {
     margin-top: 50px;
@@ -444,11 +469,12 @@
   .sec2 .tit_wrap.t3.big.mg_t {
     margin-top: 30px;
   }
-  .sec2 .tit_wrap.t3.big.mg_t img {
-    margin: 18px 0px 20px;
-  }
+
   .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
     line-height: 1.6;
+  }
+  .sec2 .tit_wrap.t3.big.mg_t .sub_desc.mg {
+    margin-top: 0px;
   }
 
   .sec2 .tit_wrap.t3 .sub_desc {
@@ -578,6 +604,7 @@
     letter-spacing: -1.2px;
     word-break: keep-all;
   }
+
   .sec2 .desc_row + .desc_row {
     margin-top: 30px;
   }
@@ -616,7 +643,7 @@
     padding: 0;
   }
   .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
-    margin-bottom: 16px;
+    margin: 16px 0;
   }
   .sec2 .tit_wrap.t3 .sub_desc {
     font-size: 14px;
