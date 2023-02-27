@@ -226,47 +226,47 @@
   letter-spacing: -0.6px;
 }
 
-.sec2 .tit_wrap.t3.big {
+.sec2 .t3.big {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
-.sec2 .tit_wrap.t3.big img {
+.sec2 .t3.big img {
   margin-top: 16px;
 }
-.sec2 .tit_wrap.t3.big.mg_t {
+.sec2 .t3.big.mg_t {
   margin-top: 70px;
 }
-.sec2 .tit_wrap.t3.big.mg_t h4 {
+.sec2 .t3.big.mg_t h4 {
   margin-bottom: 30px;
 }
-.sec2 .tit_wrap.t3.big.mg_t h4.sub_tit2 {
+.sec2 .t3.big.mg_t h4.sub_tit2 {
   margin-bottom: 14px;
 }
-.sec2 .tit_wrap.t3.big.mg_t img,
-.sec2 .tit_wrap.t3.big.mg_t .t_con {
+.sec2 .t3.big.mg_t img,
+.sec2 .t3.big.mg_t .t_con {
   margin: 0;
 }
-.sec2 .tit_wrap.t3.big.mg_t .sub_desc {
+.sec2 .t3.big.mg_t .sub_desc {
   line-height: 2;
 }
-.sec2 .tit_wrap.t3.big.mg_t .sub_desc.lh {
+.sec2 .t3.big.mg_t .sub_desc.lh {
   line-height: 1.4;
 }
-.sec2 .tit_wrap.t3.big.mg_t .sub_desc.mg {
+.sec2 .t3.big.mg_t .sub_desc.mg {
   margin: 90px 0 20px;
 }
 
-.sec2 .tit_wrap.t3.big .t_con {
+.sec2 .t3.big .t_con {
   margin: 0 50px;
 }
-.sec2 .tit_wrap.t3.big .sub_desc {
+.sec2 .t3.big .sub_desc {
   font-weight: normal;
   margin-top: 14px;
   line-height: 1.4;
 }
-.sec2 .tit_wrap.t3.big .sub_desc span {
+.sec2 .t3.big .sub_desc span {
   color: #e84c2c;
 }
 
@@ -471,21 +471,21 @@
     margin: 32px 0 0;
   }
 
-  .sec2 .tit_wrap.t3.big {
+  .sec2 .t3.big {
     padding: 0;
     font-size: 20px;
   }
-  .sec2 .tit_wrap.t3.big .t_con {
+  .sec2 .t3.big .t_con {
     margin: 0 20px;
   }
-  .sec2 .tit_wrap.t3.big.mg_t {
+  .sec2 .t3.big.mg_t {
     margin-top: 30px;
   }
 
-  .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
+  .sec2 .t3.big.mg_t .sub_desc {
     line-height: 1.6;
   }
-  .sec2 .tit_wrap.t3.big.mg_t .sub_desc.mg {
+  .sec2 .t3.big.mg_t .sub_desc.mg {
     margin-top: 0px;
   }
 
@@ -537,7 +537,7 @@
     width: 100%;
   }
 
-  .sec2 .tit_wrap.t3.big.mg_t img {
+  .sec2 .t3.big.mg_t img {
     margin: 0;
   }
 
@@ -654,30 +654,30 @@
     margin: 20px auto 0;
     padding: 0;
   }
-  .sec2 .tit_wrap.t3.big.mg_t .sub_desc {
-    margin: 16px 0;
-  }
   .sec2 .tit_wrap.t3 .sub_desc {
     font-size: 14px;
   }
-  .sec2 .tit_wrap.t3.big {
+  .sec2 .t3.big {
     font-size: 16px;
   }
-  .sec2 .tit_wrap.t3.big .t_con {
+  .sec2 .t3.big .t_con {
     margin: 0 10px;
   }
-  .sec2 .tit_wrap.t3.big .sub_desc {
+  .sec2 .t3.big .sub_desc {
     font-weight: normal;
     margin-top: 10px;
     padding: 0;
   }
-  .sec2 .tit_wrap.t3.big .sub_desc.mg {
+  .sec2 .t3.big .sub_desc.mg {
     font-weight: normal;
     margin: 20px 0;
     padding: 0;
   }
-  .sec2 .tit_wrap.t3.big.mg_t {
+  .sec2 .t3.big.mg_t {
     margin-top: 20px;
+  }
+  .sec2 .t3.big.mg_t .sub_desc {
+    margin: 16px 0;
   }
   .sec2 .tit_wrap.t4 {
     margin: 20px 0 12px;
