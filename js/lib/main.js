@@ -186,6 +186,7 @@
         $(".sticky-elem.f .inner").removeClass("show");
         $("header").removeClass("on");
         $(".btn_skip").removeClass("hide");
+        $(".scroll-section").removeClass("skip");
       } else {
         $(".sticky-elem.f .inner").addClass("show");
         $("header").addClass("on");
