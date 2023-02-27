@@ -506,10 +506,10 @@
 
 @media all and (max-width: 540px) {
   .sec2 .tit_wrap h4.sub_tit::before {
-    top: 12%;
+    top: 20%;
   }
   .sec2 .tit_wrap h4.sub_tit2::before {
-    top: 16%;
+    top: 28%;
   }
   .sec {
     padding-top: 50px;
@@ -599,7 +599,12 @@
     font-size: 22px;
     margin-bottom: 20px;
   }
-
+  .sec2 .tab_con .con2.dt {
+    padding: 0 20px;
+  }
+  .sec2 .tab_con .con2.dt h3 {
+    padding: 0;
+  }
   .sec2 .img_row > img {
     min-height: 180px;
   }
@@ -685,5 +690,16 @@
   }
   .sec2 .tit_wrap.t4 .sub_desc {
     font-size: 14px;
+  }
+}
+
+@media all and (max-width: 537px) {
+  .sec2 .tit_wrap h4.sub_tit2::before {
+    top: 15%;
+  }
+}
+@media all and (max-width: 503px) {
+  .sec2 .tit_wrap h4.sub_tit::before {
+    top: 12%;
   }
 }
