@@ -24,6 +24,7 @@
 .sec2_2 .bot_area .box {
   margin-top: 0px;
   padding-top: 120px;
+  overflow: hidden;
 }
 .sec2_2 .tit_wrap.t4 {
   margin: 0 0 14px;
@@ -35,6 +36,24 @@
   padding-bottom: 0;
 }
 
+.sec2_2_3 .page_tit > p {
+  letter-spacing: -0.04em;
+}
+.sec2_2_3 .tit_wrap.t4 .has_bar {
+  position: relative;
+  padding-left: 22px;
+  word-break: keep-all;
+  margin-top: 40px;
+}
+.sec2_2_3 .tit_wrap .has_bar::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 4px;
+  height: 24px;
+  background-color: #3da84c;
+}
 @media all and (max-width: 768px) {
   .sec2_2 .page_tit h2 {
     margin-bottom: 20px;
@@ -55,6 +74,14 @@
   .sec2_2 .tit_wrap .img_1_1 {
     margin-top: 30px;
   }
+  .sec2_2_3 .tit_wrap.t4 .has_bar {
+    padding-left: 16px;
+    margin-top: 30px;
+  }
+  .sec2_2_3 .tit_wrap .has_bar::before {
+    top: 1px;
+    height: 18px;
+  }
 }
 
 @media all and (max-width: 540px) {
@@ -68,5 +95,14 @@
 
   .sec2_2 .tit_wrap .img_1_1 {
     margin-top: 20px;
+  }
+
+  .sec2_2_3 .tit_wrap.t4 .has_bar {
+    padding-left: 12px;
+    margin-top: 20px;
+  }
+  .sec2_2_3 .tit_wrap .has_bar::before {
+    top: 1px;
+    height: 18px;
   }
 }
