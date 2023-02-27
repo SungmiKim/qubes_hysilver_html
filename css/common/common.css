@@ -462,23 +462,23 @@ main {
 .quick .btn.q3 {
   background-color: #3da84c;
 }
-.quick.pc .btn:hover {
+.quick.pc_ver .btn:hover {
   transition: width 0.3s ease;
 }
-.quick.pc .btn.q4:hover {
+.quick.pc_ver .btn.q4:hover {
   transition: width 0.5s ease;
 }
-.quick.pc .btn.q3:hover {
+.quick.pc_ver .btn.q3:hover {
   width: 300px;
 }
-.quick.pc .btn.q4:hover {
+.quick.pc_ver .btn.q4:hover {
   padding-right: 40px;
 }
-.quick.pc .btn.q5:hover {
+.quick.pc_ver .btn.q5:hover {
   justify-content: flex-start;
 }
 
-.quick.pc .btn.q5:hover {
+.quick.pc_ver .btn.q5:hover {
   width: 198px;
 }
 
@@ -498,7 +498,7 @@ main {
   line-height: 1.4;
 }
 
-.quick.pc .btn:hover .txt {
+.quick.pc_ver .btn:hover .txt {
   width: auto;
   opacity: 1;
   transition: opacity 1s;
@@ -566,13 +566,13 @@ main {
   text-align: center;
   color: #fff;
 }
-.quick.pc .btn.sns:hover .name {
+.quick.pc_ver .btn.sns:hover .name {
   display: none;
 }
 .quick .btn.sns a {
   display: none;
 }
-.quick.pc .btn.sns:hover {
+.quick.pc_ver .btn.sns:hover {
   width: 249px;
   background-color: #1a1a1a;
   padding: 0 26px 0 29px;
@@ -580,7 +580,7 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-.quick.pc .btn.sns:hover a {
+.quick.pc_ver .btn.sns:hover a {
   display: block;
 }
 
