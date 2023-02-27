@@ -37,7 +37,11 @@
   line-height: 1.4;
   word-break: keep-all;
 }
-
+.sec3 .tit_wrap .sub_desc.idt {
+  padding-left: 140px;
+  line-height: 2;
+  margin-top: 30px;
+}
 .sec3 .img_1_1 {
   margin-top: 40px;
 }
@@ -86,11 +90,6 @@
   width: calc(100% - 100px);
   margin-left: auto;
 }
-.sec3 #tab_2 .r1 .sub_desc + .sub_desc {
-  padding-left: 140px;
-  line-height: 2;
-  margin-top: 30px;
-}
 
 @media all and (max-width: 768px) {
   .sec3 ul.tabs li {
@@ -115,7 +114,11 @@
   .sec3 .tit_wrap.t4 .t_con {
     padding-left: 12px;
   }
-
+  .sec3 .tit_wrap .sub_desc.idt {
+    padding-left: 0;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
   .sec3 .img_1_1 {
     margin-top: 20px;
   }
@@ -135,11 +138,6 @@
   .sec3 .img_row.r4 .desc_wrap {
     padding: 30px 20px;
     width: 100%;
-  }
-  .sec3 #tab_2 .r1 .sub_desc + .sub_desc {
-    padding-left: 0;
-    margin-top: 20px;
-    line-height: 1.6;
   }
 }
 
