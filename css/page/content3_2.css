@@ -8,12 +8,12 @@
 .sec2 .bot_area .tab_contents {
   padding-top: 0;
 }
-.sec2 .desc_row .desc {
+.sec2 .desc_row .desc.idt {
   text-indent: -86px;
   padding-left: 86px;
 }
-.sec2 .tit_wrap h4 {
-  margin-bottom: 40px;
+.sec2 .tit_wrap .img_1_1 {
+  margin-top: 40px;
 }
 
 @media all and (max-width: 768px) {
@@ -27,11 +27,11 @@
   .sec2 .bot_area .box {
     margin-top: 50px;
   }
-  .sec2 .desc_row .desc {
+  .sec2 .desc_row .desc.idt {
     text-indent: -59px;
     padding-left: 59px;
   }
-  .sec2 .tit_wrap h4 {
+  .sec2 .tit_wrap .img_1_1 {
     margin-bottom: 20px;
   }
 }
