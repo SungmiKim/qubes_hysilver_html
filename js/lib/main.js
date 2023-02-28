@@ -187,10 +187,12 @@
         $("header").removeClass("on");
         $(".btn_skip").removeClass("hide");
         $(".scroll-section").removeClass("skip");
+        $(".quick").removeClass("show");
       } else {
         $(".sticky-elem.f .inner").addClass("show");
         $("header").addClass("on");
         $(".btn_skip").addClass("hide");
+        $(".quick").addClass("show");
       }
     }
   }

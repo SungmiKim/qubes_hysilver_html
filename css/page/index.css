@@ -11,6 +11,13 @@ header {
 header.on {
   display: block;
 }
+
+.quick {
+  display: none;
+}
+.quick.show {
+  display: block;
+}
 .container {
   overflow: hidden;
 }
