@@ -89,7 +89,7 @@
   margin-bottom: 40px;
   word-break: keep-all;
   line-height: 1.2;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 .sec2 .tab_con .p2 {
   margin: -20px 0 90px;
@@ -523,7 +523,7 @@
   }
   .sec2 .page_tit h2 {
     font-size: 24px;
-    text-align: center;
+    /* text-align: center; */
   }
   .sec2 .page_top .img_wrap {
     gap: 10px 0;
@@ -584,18 +584,16 @@
     display: block;
   }
 
-  .sec2 .tab_con .con2.mo_ver {
+  .sec2 .tab_con .con2 {
     padding: 0 10px;
     font-size: 20px;
     word-break: keep-all;
-    text-align: center;
   }
-  .sec2 .tab_con .con2.mo_ver h3 {
+  .sec2 .tab_con .con2 h3 {
     word-break: keep-all;
-    text-align: center;
   }
 
-  .sec2 .tab_con .con2.mo_ver p.mo {
+  .sec2 .tab_con .con2 p.mo {
     font-size: 16px;
   }
   .sec2 .tab_con h3 {
@@ -696,6 +694,7 @@
   }
   .sec2 .t3.big.mg_t .t_con .img_wrap img {
     width: 80%;
+    max-width: 280px;
   }
   .sec2 .tit_wrap.t4 {
     margin: 20px 0 12px;

@@ -332,7 +332,9 @@
     flex-direction: column;
     text-align: right;
   }
-
+  .people.part2 .card_content .desc span + span {
+    margin-top: 4px;
+  }
   .people.part3 {
     margin-bottom: 80px;
   }
@@ -344,7 +346,7 @@
 
   /* con1 */
   .con1 {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 
   .con1 .inner {
@@ -428,7 +430,9 @@
   }
 
   /* con1 */
-
+  .con1 {
+    padding-bottom: 0;
+  }
   .con1 .inner {
     padding: 20px;
   }

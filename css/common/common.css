@@ -37,6 +37,9 @@ body.fixed {
   max-width: 1400px;
   margin: auto;
 }
+.pt0 {
+  padding-top: 0 !important;
+}
 .pd100 {
   padding: 0 100px;
 }
@@ -48,6 +51,9 @@ body.fixed {
 }
 .le-6e {
   letter-spacing: -0.06em;
+}
+.t_left {
+  text-align: left !important;
 }
 
 /* TAB */
@@ -730,6 +736,9 @@ main {
   .pc_ver {
     display: none !important;
   }
+  .mo_pd {
+    padding: 0 20px;
+  }
   .pd100 {
     padding: 0 80px;
   }
@@ -986,6 +995,7 @@ main {
   .footer .fo_nav .left {
     width: 100%;
     justify-content: space-between;
+    font-size: 13px;
   }
 
   .footer .fo_nav .left li + li {
