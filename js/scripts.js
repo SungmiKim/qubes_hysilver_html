@@ -1,4 +1,12 @@
 $(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 0) {
+      $(".btn_skip").hide();
+    } else {
+      $(".btn_skip").show();
+    }
+  });
+
   /**
    * 모바일 메뉴
    */
@@ -52,11 +60,10 @@ $(function () {
   });
 
   if (p_name.indexOf("content1") === 1) {
-    console.log("content1");
     $(".header .gnb_link:nth-child(1)").addClass("active");
   } else if (p_name.indexOf("content2") === 1) {
     $(".header .gnb_link:nth-child(2)").addClass("active");
-  } else {
+  } else if (p_name.indexOf("content3") === 1) {
     $(".header .gnb_link:nth-child(3)").addClass("active");
   }
   /**
