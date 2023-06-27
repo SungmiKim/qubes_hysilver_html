@@ -43,7 +43,7 @@
 }
 .sec2 .page_top .img_wrap > img,
 .sec2 .img_row .img_wrap > img {
-  width: 50%;
+  width: calc((100% - 10px) / 2);
 }
 .sec2 ul.tabs {
   padding: 0 40px;

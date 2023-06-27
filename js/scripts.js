@@ -35,6 +35,29 @@ $(function () {
     $(this).toggleClass("show");
   });
 
+  $(".header .gnb_link .sub.wide .wide_menu").click(function () {
+    if ($(this).next().hasClass("show")) {
+      $(this).next().removeClass("show");
+    } else {
+      $(".header .gnb_link .sub.wide .wide_menu + .wide_link").removeClass("show");
+      $(this).next().addClass("show");
+    }
+  });
+
+  $(".header .gnb_link .sub.wide .wide_link > li").hover(
+    function () {
+      var iconSrc = $(this).find(".icon").attr("src");
+      iconSrc = iconSrc.replace(".png", "_o.png");
+      $(this).find(".icon").attr("src", iconSrc);
+      console.log();
+    },
+    function () {
+      var iconSrc = $(this).find(".icon").attr("src");
+      iconSrc = iconSrc.replace("_o.png", ".png");
+      $(this).find(".icon").attr("src", iconSrc);
+    }
+  );
+
   /**
    * 탭 메뉴
    */
