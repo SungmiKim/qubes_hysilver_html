@@ -196,8 +196,8 @@ header:hover {
 }
 .video_list h2,
 .board_list h2 {
-  font-size: 46px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 500;
   letter-spacing: -1.38px;
   color: #191919;
   margin-bottom: 28px;

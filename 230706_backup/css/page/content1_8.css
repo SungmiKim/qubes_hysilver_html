@@ -1,0 +1,440 @@
+.rd {
+  color: #e84c2c;
+}
+.gr {
+  color: #5ec06c;
+}
+.bk {
+  color: #8a8a8a;
+}
+.fb {
+  font-weight: bold;
+}
+.bol {
+  font-weight: bold;
+}
+
+.rd,
+.gr,
+.bk {
+  margin: 0 18px;
+}
+
+.sec {
+  padding-top: 0;
+  padding-bottom: 240px;
+}
+.sec::after {
+  content: "";
+  width: 100%;
+  height: 540px;
+  background: #e84c2c;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.main {
+  width: calc(100% - 200px);
+  position: relative;
+  z-index: 2;
+  margin: -310px auto 0;
+  padding: 66px 95px;
+  border-radius: 0 0 91px 91px;
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
+}
+.main::after {
+  content: "";
+  width: 100%;
+  height: 445px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 91px 91px;
+  box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.m_map3 {
+  position: relative;
+  z-index: 2;
+}
+
+/* map area */
+.m_line {
+  width: 100%;
+  height: 2px;
+  margin: 100px 0;
+  background: #e3e3e3;
+}
+
+.tit_wrap.t1 {
+  padding: 0 0 42px;
+}
+
+.g1 {
+  width: 100%;
+  min-height: 504px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+.g2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 68px;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.g2 .add_1,
+.g2 .add_2 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.g2 .add_2::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 2px;
+  height: 32px;
+  margin: 0 32px;
+  background: #8a8a8a;
+}
+
+.g2 .imgs {
+  margin-right: 16px;
+}
+
+.g3 {
+  font-size: 24px;
+}
+.g3 .add_1 {
+  display: flex;
+  margin-bottom: 24px;
+}
+.g3 .add_1::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  bottom: -2px;
+  display: inline;
+  width: 4px;
+  height: 24px;
+  background: #e84c2c;
+  z-index: 2;
+}
+
+.g3 .add_2 {
+  display: flex;
+}
+.g3 .add_2::before {
+  content: "";
+  font-size: 20px;
+  position: relative;
+  bottom: -2px;
+  display: flex;
+  width: 4px;
+  height: 24px;
+  background: #5ec06c;
+  z-index: 2;
+}
+
+.m_map2 h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.m_map2 p {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.bf {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.bf > h4::before {
+  content: "";
+  position: relative;
+  bottom: -2px;
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  margin-right: 6px;
+  background: #8a8a8a;
+  z-index: 2;
+}
+
+.g_label1 {
+  bottom: 0px;
+  left: 45px;
+  position: relative;
+  font-size: 12px;
+}
+
+.m_map3 .g2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.m_map3 .g1 {
+  min-height: 465px;
+}
+.m_map3 .imgs {
+  margin-right: 8px;
+}
+.m_map3 .g2 .add_2::before {
+  height: 20px;
+  margin: 0 16px;
+  background: #191919;
+}
+
+.tit_wrap.t2 {
+  padding: 0 0 66px;
+}
+
+ul.tabs {
+  border-bottom: 3px solid #c5c5c5;
+  margin: 0 auto 87px;
+}
+
+ul.tabs li {
+  width: 50%;
+  padding-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: -0.9px;
+  color: #777;
+}
+ul.tabs li.current::before {
+  bottom: -3px;
+  background: #596df2;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    min-width: 618px;
+  }
+  .sec {
+    padding-bottom: 100px;
+  }
+  .sec::after {
+    height: 350px;
+  }
+  .main {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 39px 0;
+  }
+
+  .up_img .bg {
+    width: 768px;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  /* map area */
+  .m_line {
+    margin: 80px 0;
+  }
+
+  .g1 {
+    min-height: 300px;
+    margin-bottom: 18px;
+  }
+  .g2 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .g2 .add_1,
+  .g2 .add_2 {
+    margin-bottom: 4px;
+  }
+  .g2 .add_2::before {
+    display: none;
+  }
+
+  .g2 .imgs {
+    margin-right: 8px;
+  }
+
+  .g3 {
+    font-size: 20px;
+    letter-spacing: -0.9px;
+  }
+  .g3 .add_1 {
+    margin-bottom: 0px;
+  }
+  .g3 .add_2::before,
+  .g3 .add_1::before {
+    bottom: -18px;
+    height: 18px;
+  }
+
+  .g3 .add_1,
+  .g3 .add_2 {
+    flex-direction: column;
+  }
+
+  .g3 h4 {
+    margin-bottom: 10px;
+  }
+
+  .m_map2 h4 {
+    font-size: 20px;
+  }
+  .m_map2 p {
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: -1.2px;
+    word-break: keep-all;
+    text-indent: 2px;
+  }
+  .bf {
+    margin-bottom: 24px;
+  }
+  .bf > h4::before {
+    height: 22px;
+  }
+
+  .m_map3 .g2 {
+    font-size: 18px;
+  }
+  .m_map3 .g1 {
+    min-height: 300px;
+  }
+  .m_map3 .gmap_wrap {
+    padding: 0 10px;
+  }
+
+  ul.tabs {
+    margin: 0 auto 48px;
+  }
+
+  ul.tabs li {
+    width: 50%;
+    padding-bottom: 16px;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .container {
+    min-width: 300px;
+  }
+  .sec {
+    padding-bottom: 100px;
+  }
+  .sec::after {
+    height: 300px;
+  }
+  .main {
+    min-width: none;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 50px 0;
+    border-radius: 0 0 46px 46px;
+  }
+
+  .main::after {
+    border-radius: 0 0 46px 46px;
+    height: 300px;
+  }
+
+  .up_img .bg {
+    height: 250px;
+  }
+
+  /* map area */
+
+  .m_line {
+    margin: 50px 0;
+  }
+  .tit_wrap.t1 {
+    padding: 0 0 30px;
+  }
+  .g1 {
+    min-height: 240px;
+    margin-bottom: 16px;
+  }
+  .g2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: -0.9px;
+  }
+  .g2 .imgs {
+    height: 18px;
+    margin-right: 4px;
+  }
+
+  .g3 {
+    font-size: 14px;
+  }
+  .g3 h4 {
+    margin: 0 10px 4px;
+  }
+  .g3 p {
+    line-height: 20px;
+  }
+  .g3 .add_1 {
+    margin-bottom: 10px;
+  }
+  .g3 .add_2 {
+    margin-top: -8px;
+  }
+  .g3 .add_2::before,
+  .g3 .add_1::before {
+    bottom: -16px;
+    height: 18px;
+  }
+
+  .m_map2 h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .m_map2 p {
+    font-size: 14px;
+    margin-right: 0px;
+    line-height: 1.4;
+  }
+  .bf {
+    margin-bottom: 20px;
+  }
+  .bf > h4::before {
+    bottom: -4px;
+    height: 20px;
+  }
+
+  .m_map3 .g2 {
+    font-size: 14px;
+  }
+  .m_map3 .g1 {
+    min-height: 240px;
+  }
+  .m_map3 .gmap_wrap {
+    padding: 0 5px;
+  }
+
+  .tit_wrap.t2 {
+    padding: 0 0 30px;
+  }
+  ul.tabs {
+    border-bottom: none;
+    flex-wrap: wrap;
+    margin: 0 auto 8px;
+  }
+  ul.tabs li {
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+  ul.tabs li.current::before {
+    bottom: 7px;
+  }
+}

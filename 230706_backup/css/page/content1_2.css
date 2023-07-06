@@ -1,0 +1,456 @@
+.ls {
+  letter-spacing: -0.9px;
+}
+.sec {
+  padding-top: 112px;
+}
+.tit_wrap {
+  margin-bottom: 60px;
+}
+
+.tit_wrap.t2 {
+  padding: 0;
+}
+
+.tit_wrap.mg1 {
+  margin-bottom: 20px;
+}
+.people {
+  width: 100%;
+  margin-top: 67px;
+  padding: 0 100px;
+}
+.people .tit_wrap h4 {
+  margin: 18px 0;
+}
+.people.part3 .tit_wrap h4::before {
+  background-color: #3da84c;
+}
+.people .card_content {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  margin: 15px 0;
+}
+.people .card {
+  width: calc(100% / 4);
+  background: #f8f8f8;
+  overflow: hidden;
+}
+.people .card_img {
+  height: 286px;
+  overflow: hidden;
+}
+
+.people .card .card_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.people .card .card_name .name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.people .card .card_name .depart {
+  font-size: 16px;
+  font-weight: 500;
+  color: #373737;
+}
+.people .card .card_info {
+  padding: 12px 20px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.people .card.link {
+  display: flex;
+  align-items: flex-end;
+}
+.people .card.link .card_name {
+  margin: 10px 0;
+}
+.people .card.link .card_info {
+  padding: 12px 25px 22px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.people .tit::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+.people.part1 .tit::before {
+  background-color: #e84c2c;
+}
+.people.part3 .tit::before {
+  background-color: #3da84c;
+}
+
+.people .card .card_tit {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.people.part1 .card .card_tit {
+  color: #e84c2c;
+}
+.people.part3 .card .card_tit {
+  color: #3da84c;
+}
+
+.people.part2 {
+  margin-top: 10px;
+}
+.people.part2 .card_content {
+  background: #f8f8f8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 33px;
+  font-size: 20px;
+}
+
+.people.part2 .card_content .point {
+  font-size: 20px;
+  font-weight: bold;
+}
+.people.part2 .card_content .name {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 38px;
+  padding-right: 38px;
+}
+
+.people.part2 .card_content .name::after {
+  content: "";
+  width: 2px;
+  height: 24px;
+  background: #191919;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.people.part3 {
+  margin-bottom: 150px;
+}
+
+.people .card,
+.people .card .card_tit,
+.people .card.link a,
+.people .card.link .icon {
+  transition: all 0.5s ease;
+}
+
+.people .card .d_img {
+  transition: all 0.3s ease;
+}
+
+.people .card:hover .d_img {
+  transform: scale(1.1);
+}
+
+.people .card_info::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.people.part1 .card_info::before {
+  background: #e84c2c;
+}
+.people.part3 .card_info::before {
+  background: #5ec06c;
+}
+.people .card:hover {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.people .card:hover .card_info::before {
+  opacity: 1;
+  left: 0;
+}
+
+.people .card .card_tit,
+.people .card .card_name,
+.people .card.link a {
+  position: relative;
+  z-index: 2;
+}
+.people .card:hover .card_tit,
+.people .card:hover .depart,
+.people .card.link:hover a {
+  transition: all 0.2s ease;
+  color: #fff;
+}
+.people .card.link:hover .icon {
+  margin: 8px;
+  color: #fff;
+}
+
+.line {
+  height: 1px;
+  background: #e3e3e3;
+  margin: 120px 100px 85px;
+}
+
+/* con1 */
+.con1 {
+  position: relative;
+  padding-bottom: 260px;
+}
+.con1 .cover {
+  display: block;
+  margin: auto;
+}
+.con1 .inner {
+  position: absolute;
+  height: 410px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 78px 288px 95px 133px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.83), #fff);
+}
+.con1 .t_myeong {
+  font-size: 50px;
+  line-height: 1.28;
+  letter-spacing: -1.5px;
+  color: #191919;
+}
+.con1 .t_myeong > span {
+  font-family: inherit;
+}
+.con1 .desc {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #191919;
+  margin-top: 24px;
+}
+
+.con1 .desc > span {
+  font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+  .sec {
+    padding-top: 80px;
+  }
+  .tit_wrap {
+    margin-bottom: 40px;
+  }
+  .sec .tit_wrap {
+    max-width: 500px;
+    margin: auto;
+    padding: 0;
+  }
+  .tit_wrap.mg1 {
+    margin-bottom: 20px;
+  }
+  .people {
+    max-width: 500px;
+    margin: 40px auto 0;
+    padding: 0;
+  }
+  .people .tit_wrap h4 {
+    margin: 16px 0;
+  }
+  .people .card_content {
+    gap: 0;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .people .card {
+    max-width: 296px;
+    margin-top: 10px;
+    width: calc(100% / 2 - 5px);
+  }
+  .people .card:nth-child(2n) {
+    margin-left: 10px;
+  }
+
+  .people .card_img {
+    height: auto;
+  }
+
+  .people .card .card_name .name {
+    font-size: 22px;
+  }
+  .people .card .card_name .depart {
+    font-size: 14px;
+  }
+  .people .card .card_info {
+    padding: 12px 16px;
+  }
+
+  .people .card.link .card_info {
+    padding: 12px 16px;
+  }
+
+  .people .card .card_tit {
+    font-size: 15px;
+  }
+
+  .people.part2 .card_content {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .people.part2 .card_content.r1 {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .people.part2 .card_content .point {
+    font-size: 16px;
+  }
+  .people.part2 .card_content .name {
+    font-size: 16px;
+  }
+  .people.part2 .card_content .name::after {
+    display: none;
+  }
+  .people.part2 .card_content .desc {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  .people.part2 .card_content .desc span + span {
+    margin-top: 4px;
+  }
+  .people.part3 {
+    margin-bottom: 80px;
+  }
+
+  .line {
+    max-width: 500px;
+    margin: 80px auto 80px;
+  }
+
+  /* con1 */
+  .con1 {
+    padding-bottom: 50px;
+  }
+
+  .con1 .inner {
+    position: relative;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    padding: 40px;
+  }
+  .con1 .t_myeong {
+    font-size: 36px;
+  }
+  .con1 .desc {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .sec {
+    padding: 60px 0;
+  }
+  .sec .tit_wrap {
+    max-width: none;
+    padding: 0 20px;
+  }
+  .sec .tit_wrap h3 {
+    font-size: 24px;
+  }
+  .tit_wrap.t2 {
+    padding: 0;
+  }
+  .tit_wrap.mg1 {
+    margin-bottom: 20px;
+  }
+
+  .people {
+    max-width: 296px;
+    margin: 20px auto 0;
+  }
+  .people .card:nth-child(2n) {
+    margin-left: 0;
+  }
+  .people .card {
+    width: 100%;
+    margin-top: 0;
+  }
+  .people .card:not(:last-of-type),
+  .people .card_content:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  .people .card .card_info {
+    padding: 12px 20px 16px;
+  }
+  .people .card .card_name .name {
+    font-size: 18px;
+  }
+  .people .card.link .card_name {
+    margin: 10px 0;
+  }
+  .people .card .card_tit {
+    font-size: 14px;
+  }
+  .people.part2 .card_content {
+    padding: 20px;
+  }
+  .people.part2 .card_content.r1 {
+    letter-spacing: -1.1px;
+    line-height: 24px;
+  }
+  .people.part2 .card_content .name {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .line {
+    max-width: 296px;
+    margin: 60px auto;
+  }
+
+  /* con1 */
+  .con1 {
+    padding-bottom: 0;
+  }
+  .con1 .inner {
+    padding: 20px;
+  }
+  .con1 .t_myeong {
+    font-size: 24px;
+  }
+  .img_wrap {
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+  }
+
+  .img_wrap img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: none;
+    height: 100%;
+  }
+}

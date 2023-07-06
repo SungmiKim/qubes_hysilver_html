@@ -137,12 +137,13 @@ ul.tabs li.current::before {
   justify-content: space-between;
 }
 .header .gnb {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
 }
 .header .gnb_link {
-  position: relative;
+  /* position: relative; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -171,46 +172,218 @@ ul.tabs li.current::before {
 }
 .header .gnb_link .sub {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
   top: 100%;
-  left: 0;
-  width: 212px;
+  width: 730px;
+  /* width: 212px; */
   background-color: rgba(255, 255, 255, 0.95);
   padding: 16px 0;
   display: none;
 }
 
-.header .gnb_link:hover .sub {
-  display: block;
+
+
+
+
+
+
+
+.header .gnb_link:hover .sub.flex  {
+  display: flex;
+  padding: 30px 0;
+  box-sizing: border-box;
 }
 
-.header .gnb_link .sub > li > a {
-  display: flex;
+.header .gnb_link .sub .depth01{
+  position: relative;
+}
+
+.header .gnb_link .sub .depth01 > li{
+  padding: 12px 0;
+}
+
+.header .gnb_link .sub .depth01 > li > a {
+  position: relative;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 39px;
+  justify-content: space-between; */
+  /* height: 39px; */
   font-size: 14px;
   font-weight: 500;
   text-align: left;
   color: #191919;
-  padding-left: 22px;
+  padding-left: 92px;
+  padding-right: 26px;
+}
+
+.header .gnb_link .sub .depth01 > li > a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 10px;
+  left: 68px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../../images/icon/header/arrow1.png) no-repeat center / 100%;
+}
+
+header .gnb_link .sub .depth01 > li > a:hover {
+  color: rgba(232, 76, 44, 0.9);
+}
+
+.header .gnb_link .sub .depth01.first{
+  width: 260px;
+}
+
+.header .gnb_link .sub .depth01.first::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #707070;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.header .gnb_link .sub .depth01.second{
+  position: relative;;
+  display: flex;
+  flex-wrap: wrap;
+  width: 470px;
+  height: 270px;
+  margin-top: 30px;
+}
+
+.header .gnb_link .sub .depth01.second li{
+  width: 25%;
+  height: 95px;
+}
+
+.header .gnb_link .sub .depth01.second li a{}
+
+.header .gnb_link .sub .depth01.second li a .img_con{
+  position: relative;
+  width: 46px;
+  height: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  box-shadow: 0px 5px 5px #858585;
+}
+
+.header .gnb_link .sub .depth01.second > li > a{
+  padding: 0;
+}
+
+.header .gnb_link .sub .depth01.second li a .img_con .pc{}
+
+.header .gnb_link .sub .depth01.second li .m{
+  display: none;
+}
+
+.header .gnb_link .sub .depth01.second > li:hover p{
+  color: rgba(232, 76, 44, 0.9);
+}
+
+.header .gnb_link .sub .depth01.second li:hover .m{
+  display: block;
+}
+
+.header .gnb_link .sub .depth01.second li:hover .pc{
+  display: none;
+}
+
+.header .gnb_link .sub .depth01.second li a .img_con .pc:hover .m{
+  display: block;
+}
+
+.header .gnb_link .sub .depth01.second li a .img_con img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.header .gnb_link .sub .depth01.second li a p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #6A6A6A;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.header .gnb_link .sub .depth01.second > li > a::after{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header .gnb_link:hover .sub {
+  display: block;
+}
+
+.header .gnb_link .sub > li{
+  padding: 12px 0;
+}
+
+.header .gnb_link .sub > li > a {
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  /* height: 39px; */
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #191919;
+  padding-left: 92px;
   padding-right: 26px;
 }
 
 .header .gnb_link .sub > li > a::after {
   content: "";
+  position: absolute;
+  display: block;
   width: 6px;
   height: 10px;
+  left: 68px;
+  top: 50%;
+  transform: translateY(-50%);
   background: url(../../images/icon/header/arrow1.png) no-repeat center / 100%;
 }
 
 header .gnb_link .sub > li > a:hover {
-  background-color: rgba(232, 76, 44, 0.9);
-  color: #fff;
+  color: rgba(232, 76, 44, 0.9);
 }
 
-.header .gnb_link .sub a:hover::after {
+/* .header .gnb_link .sub a:hover::after {
   background-image: url(../../images/icon/header/arrow2.png);
-}
+} */
 
 .header .gnb_link .sub.show {
   display: block;

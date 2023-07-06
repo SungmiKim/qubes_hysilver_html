@@ -1,0 +1,261 @@
+.sec {
+  padding-top: 0;
+  padding-bottom: 240px;
+}
+.tab_area {
+  width: calc(100% - 200px);
+  position: relative;
+  margin: -257px auto 0;
+  background: linear-gradient(to bottom, #fff, #fff 89%, #fff);
+  padding-top: 54px;
+}
+ul.tabs {
+  border-bottom: 3px solid #c5c5c5;
+  width: calc(100% - 200px);
+  margin: 0 auto 87px;
+}
+ul.tabs li {
+  width: 50%;
+  padding-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  color: #777;
+}
+ul.tabs li.current {
+  color: #e84c2c;
+}
+
+ul.tabs li.current::before {
+  bottom: -3px;
+}
+.tit_wrap.t1 {
+  margin-bottom: 105px;
+}
+.tit_wrap small {
+  color: #8a8a8a;
+}
+.tit_wrap.t2 {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tit_wrap.t2 h4::before {
+  height: 32px;
+}
+.tit_wrap.t2 .link {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+  text-align: right;
+  color: #373737;
+  line-height: 1.4;
+}
+.tit_wrap.t2 .link > a {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  color: #e84c2c;
+  margin-top: 4px;
+}
+
+.t_img {
+  position: relative;
+  padding: 0 90px 106px;
+  margin-top: 12px;
+}
+.t_img .table {
+  position: relative;
+  z-index: 2;
+}
+.t_img .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  border-radius: 91px;
+  box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to bottom, #fff, #fff 20%, #fff);
+}
+
+.col + .col {
+  margin-top: 100px;
+}
+
+.col.c2 .tit_wrap h4::before {
+  background-color: #3da84c;
+}
+.col.c2 .tit_wrap.t2 .link > a {
+  color: #3da84c;
+}
+
+.tab_content .links {
+  display: flex;
+  align-items: center;
+}
+
+.tab_content .links a {
+  position: relative;
+  width: 50%;
+}
+
+.tab_content .links a + a {
+  margin-left: 10px;
+}
+.tab_content .links a > .cen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1.2px;
+  color: #191919;
+}
+
+.tab_content .links a > .cen {
+  line-height: 1.4;
+}
+
+.tab_content .links a > small {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #373737;
+}
+
+@media all and (max-width: 768px) {
+  .sec {
+    padding-bottom: 100px;
+  }
+
+  .con_bg {
+    width: 768px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .tab_area {
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+  }
+  ul.tabs {
+    width: calc(100% - 40px);
+    margin: 0 auto 50px;
+  }
+  ul.tabs li {
+    padding-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .tit_wrap.t1 {
+    margin-bottom: 80px;
+  }
+
+  .tit_wrap.t2 {
+    font-size: 28px;
+  }
+  .tit_wrap.t2 h4::before {
+    height: 100%;
+  }
+  .tit_wrap.t2 .link {
+    font-size: 20px;
+  }
+  .tit_wrap.t2 .link > a {
+    font-size: 16px;
+  }
+  .t_img {
+    padding: 0 30px 70px;
+    width: calc(100vw - 40px);
+    margin: 12px auto 0;
+  }
+  .col + .col {
+    margin-top: 80px;
+  }
+  .tab_content .links {
+    padding: 0;
+    width: calc(100vw - 40px);
+    margin: auto;
+  }
+
+  .tab_content .links a > .cen {
+    font-size: 4vw;
+  }
+
+  .tab_content .links a > small {
+    bottom: 16%;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .sec {
+    padding-bottom: 80px;
+  }
+
+  .con_bg {
+    height: 250px;
+  }
+
+  ul.tabs {
+    margin: 0 auto 40px;
+  }
+
+  .tit_wrap.t1 {
+    margin-bottom: 50px;
+  }
+
+  .tit_wrap.t2 {
+    font-size: 20px;
+  }
+
+  .tit_wrap.t2 .link {
+    font-size: 16px;
+  }
+  .tit_wrap.t2 .link > a {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .t_img {
+    padding: 0 20px;
+    margin: 12px 0 0;
+    width: 100%;
+  }
+  .t_img .bg {
+    display: none;
+  }
+
+  .col + .col {
+    margin-top: 50px;
+  }
+
+  .tab_content .links {
+    flex-direction: column;
+  }
+
+  .tab_content .links a {
+    max-width: 300px;
+    width: calc(100vw - 40px);
+  }
+
+  .tab_content .links a + a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .tab_content .links a > .cen {
+    font-size: 28px;
+  }
+}

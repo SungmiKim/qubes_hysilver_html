@@ -1,0 +1,58 @@
+@import url(./content2_1.css);
+@import url(./content3_1.css);
+.sec2_3 .page_tit h2 {
+  font-size: 30px;
+}
+.sec2_3 .tit_wrap.t4 {
+  margin: 14px 0;
+}
+.sec2_3 .tit_wrap.t4 .t_con {
+  padding-left: 0;
+}
+.sec2_3 .tit_wrap.t4 .sub_desc {
+  word-break: keep-all;
+}
+.sec2_3 .tab_tit h3.cen {
+  text-align: center;
+  margin-bottom: 96px;
+}
+.opwt_list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.opwt_list li {
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 40px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #e84c2c;
+  background-color: #fff;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #191919;
+}
+.opwt_list li + li {
+  margin-top: 30px;
+}
+@media all and (max-width: 768px) {
+  .sec2_3 .page_tit h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+  .sec2_3 .tab_tit h3 {
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 540px) {
+  .sec2_3 .page_tit h2 {
+    font-size: 18px;
+  }
+  .sec2_3 .page_tit h2 br {
+    display: none;
+  }
+  .sec2_3 .tab_tit h3 {
+    margin-bottom: 30px;
+  }
+}
