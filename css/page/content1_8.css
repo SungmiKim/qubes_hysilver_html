@@ -215,6 +215,10 @@ ul.tabs li.current::before {
   background: #596df2;
 }
 
+.root_daum_roughmap .wrap_map{
+  margin-bottom: 30px;
+}
+
 @media all and (max-width: 768px) {
   .container {
     min-width: 618px;

@@ -626,6 +626,30 @@ main {
 .sub_nav .links li {
   position: relative;
 }
+.sub_nav .links li::before{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background-color: #e84c2c;
+  transition: all .2s;
+}
+.sub_nav .links li:hover::before{
+  width: 100%;
+}
+.sub_nav .links li.on::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  bottom: -10px;
+  background-color: #e84c2c;
+}
 .sub_nav .links li + li {
   margin-left: 53px;
 }
