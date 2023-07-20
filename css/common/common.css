@@ -653,7 +653,7 @@ main {
 .sub_nav .links li + li {
   margin-left: 53px;
 }
-.sub_nav .links li.active::before {
+/* .sub_nav .links li.active::before {
   content: "";
   width: 100%;
   height: 2px;
@@ -661,7 +661,7 @@ main {
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-}
+} */
 
 .sec {
   background: #fff;
